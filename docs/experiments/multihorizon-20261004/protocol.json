@@ -1,0 +1,254 @@
+{
+  "registered_at": "2026-10-04T20:23:28.074297+00:00",
+  "archive": "/Users/maguayuhui/Documents/竞赛/服外 9.22/service-outsource/../公开工业数据集/多步泛化-20261004/CascadedTanksFiles-mirror.zip",
+  "archive_sha256": "eb0fa05851e8a7136846c2e3b61fbef87def78d0852c86ab91b02ac5db541b51",
+  "metadata_only": [
+    [
+      "uEst",
+      [
+        1024,
+        1
+      ],
+      "double"
+    ],
+    [
+      "uVal",
+      [
+        1024,
+        1
+      ],
+      "double"
+    ],
+    [
+      "yEst",
+      [
+        1024,
+        1
+      ],
+      "double"
+    ],
+    [
+      "yVal",
+      [
+        1024,
+        1
+      ],
+      "double"
+    ],
+    [
+      "Ts",
+      [
+        1,
+        1
+      ],
+      "double"
+    ]
+  ],
+  "source": "https://www.nonlinearbenchmark.org/benchmarks/cascaded-tanks",
+  "official_loader": "https://github.com/MaartenSchoukens/nonlinear_benchmarks",
+  "input": "u pump control voltage",
+  "output": "y lower tank level sensor voltage",
+  "train_variables": [
+    "uEst",
+    "yEst"
+  ],
+  "test_variables": [
+    "uVal",
+    "yVal"
+  ],
+  "fresh_test": true,
+  "scope": "one real SISO fluid-level apparatus, separate official Test record; not MISO or cross-factory proof",
+  "original": {
+    "commit": "f83223763a09130f9b63717b52152b2f0b0b48a5",
+    "source_sha256": {
+      "backend/app/services/modeling_service.py": "410a5f8add739f540eba3a51953231c4b1f0ef31c6da4d75c90575af56f33394",
+      "backend/app/services/optimization_service.py": "6cbbd0b9d44b401d5429c1fe4d2475a4437e1fcc33d63420d7c54c8adc64dd59"
+    },
+    "extraction": "verbatim_AST_functions_only"
+  },
+  "original_grid": [
+    {
+      "na": 1,
+      "nb": 1,
+      "estimator": "ols"
+    },
+    {
+      "na": 1,
+      "nb": 1,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    },
+    {
+      "na": 1,
+      "nb": 2,
+      "estimator": "ols"
+    },
+    {
+      "na": 1,
+      "nb": 2,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    },
+    {
+      "na": 1,
+      "nb": 3,
+      "estimator": "ols"
+    },
+    {
+      "na": 1,
+      "nb": 3,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    },
+    {
+      "na": 2,
+      "nb": 1,
+      "estimator": "ols"
+    },
+    {
+      "na": 2,
+      "nb": 1,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    },
+    {
+      "na": 2,
+      "nb": 2,
+      "estimator": "ols"
+    },
+    {
+      "na": 2,
+      "nb": 2,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    },
+    {
+      "na": 2,
+      "nb": 3,
+      "estimator": "ols"
+    },
+    {
+      "na": 2,
+      "nb": 3,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    },
+    {
+      "na": 3,
+      "nb": 1,
+      "estimator": "ols"
+    },
+    {
+      "na": 3,
+      "nb": 1,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    },
+    {
+      "na": 3,
+      "nb": 2,
+      "estimator": "ols"
+    },
+    {
+      "na": 3,
+      "nb": 2,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    },
+    {
+      "na": 3,
+      "nb": 3,
+      "estimator": "ols"
+    },
+    {
+      "na": 3,
+      "nb": 3,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    },
+    {
+      "na": 4,
+      "nb": 1,
+      "estimator": "ols"
+    },
+    {
+      "na": 4,
+      "nb": 1,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    },
+    {
+      "na": 4,
+      "nb": 2,
+      "estimator": "ols"
+    },
+    {
+      "na": 4,
+      "nb": 2,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    },
+    {
+      "na": 4,
+      "nb": 3,
+      "estimator": "ols"
+    },
+    {
+      "na": 4,
+      "nb": 3,
+      "estimator": "ridge",
+      "ridge_alpha": 0.1
+    }
+  ],
+  "arms": [
+    "initial24",
+    "affine24",
+    "single_horizon24",
+    "multihorizon24"
+  ],
+  "simulation_grid": {
+    "na": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "nb": [
+      1,
+      2,
+      3
+    ],
+    "alpha": [
+      0.0,
+      0.001
+    ]
+  },
+  "train": "[50,floor(N_est*.6))",
+  "validation": "[floor(N_est*.65),N_est), [floor(N_est*.82),N_est)",
+  "selection": "minimum mean normalized RMSE against persistence over two overlapping source Validation horizons; fixed ordering breaks ties",
+  "delay": 1,
+  "multihorizon": [
+    1,
+    16,
+    64,
+    0
+  ],
+  "max_nfev_per_start": 150,
+  "refit_after_selection": false,
+  "initialization": "measured output history strictly before origin; no fitted target offset",
+  "test_start": 50,
+  "test_forecast": "one continuous free-run to record end; known pump control inputs; no output updates",
+  "comparison": "model-only, all contiguous Train rows; 24 candidates per arm, unequal solver/CPU budget, no full original pipeline replay",
+  "acceptance": "report fresh Test once; do not change algorithm or selection after viewing it; no default replacement based on one SISO record",
+  "code_sha256": {
+    "backend/scripts/benchmark_multihorizon.py": "048bcb0a726969a53d6f8b8fb5bbb78e7f6a356800f45067a31a3bb17ce98a2e",
+    "backend/algorithms/identifiability/multihorizon.py": "c360c1483eae04dbd2fdc30d775219cac8a0541525ec674002e98c7a84f7c765",
+    "backend/algorithms/identifiability/output_error.py": "2c8b3918119c0345d33a38bc5ed420ad71f688b79bcc61884cacc0a064d1bc2d",
+    "backend/algorithms/identifiability/experiments.py": "2a54b69ba5286f758b99f080cd3d3d8b19fbf83718ee3e514ba3e8b95f81e54c",
+    "backend/algorithms/identifiability/estimation.py": "93f99e695e518aafe60e97bc486d630911f3d8dc0aa70fd5aa54b11618963d76",
+    "backend/algorithms/identifiability/regressor.py": "2e42a2d99fd9e9a49bc634593e38385dc88681bd2f61c4965cf723b3c8100d5b",
+    "backend/algorithms/identifiability/validation.py": "1c36f784f6c0a85a23ce2cf24e425df4c23c2b290642becda6d76a06f2f83931",
+    "backend/algorithms/identifiability/support.py": "b0fd7ccbfe6d92e1da6a2e1cccf335b3f516af27f87831dd8fe9ef2e28fb7e5e",
+    "backend/scripts/benchmark_initial_and_oe.py": "3a667b2329dccca8e2289456e067d5328e21257c4c0ebc35031699bce16139c7"
+  }
+}

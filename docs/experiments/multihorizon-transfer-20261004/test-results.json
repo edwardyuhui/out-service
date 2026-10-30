@@ -1,0 +1,77 @@
+{
+  "seal_sha256": "fd318f7f971a5b345dbc63f800daea6e2de65f1ff2cb9bb0a73a2b206b9d7677",
+  "results": [
+    {
+      "case": "distillation_b",
+      "role": "previously_scored_development_regression",
+      "selected_arm": "multihorizon_controls",
+      "persistence_rmse": 2.7283345298791146,
+      "arms": {
+        "pooled_controls": {
+          "rmse": 7.830556565749772,
+          "fit": -204.2501844299299,
+          "n_samples": 505,
+          "future_output_invariance": true,
+          "refit": false
+        },
+        "multihorizon_controls": {
+          "rmse": 7.837458963131708,
+          "fit": -204.51837171123356,
+          "n_samples": 505,
+          "future_output_invariance": true,
+          "refit": false
+        },
+        "pooled_pressure": {
+          "rmse": 7.799401447959684,
+          "fit": -203.03967656194123,
+          "n_samples": 505,
+          "future_output_invariance": true,
+          "refit": false
+        },
+        "multihorizon_pressure": {
+          "rmse": 4.822161526538999,
+          "fit": -87.36133523606371,
+          "n_samples": 505,
+          "future_output_invariance": true,
+          "refit": false
+        }
+      }
+    },
+    {
+      "case": "distillation_c",
+      "role": "previously_scored_development_regression",
+      "selected_arm": "multihorizon_pressure",
+      "persistence_rmse": 1.5766724783213832,
+      "arms": {
+        "pooled_controls": {
+          "rmse": 0.777719426093476,
+          "fit": 19.36321930074505,
+          "n_samples": 77,
+          "future_output_invariance": true,
+          "refit": false
+        },
+        "multihorizon_controls": {
+          "rmse": 3.617538867019079,
+          "fit": -275.0795961933293,
+          "n_samples": 77,
+          "future_output_invariance": true,
+          "refit": false
+        },
+        "pooled_pressure": {
+          "rmse": 2.395217931293428,
+          "fit": -148.3449127956037,
+          "n_samples": 77,
+          "future_output_invariance": true,
+          "refit": false
+        },
+        "multihorizon_pressure": {
+          "rmse": 3.6916560915474927,
+          "fit": -282.76433979084453,
+          "n_samples": 77,
+          "future_output_invariance": true,
+          "refit": false
+        }
+      }
+    }
+  ]
+}

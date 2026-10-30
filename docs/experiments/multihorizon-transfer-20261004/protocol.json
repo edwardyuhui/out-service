@@ -1,0 +1,110 @@
+{
+  "registered_at": "2026-10-04T20:28:51.944675+00:00",
+  "archive": "/Users/maguayuhui/Documents/竞赛/服外 9.22/service-outsource/../公开工业数据集/泛化验证-20261003/ContinuousDistillationData.zip",
+  "archive_sha256": "8076e5cec0c1137ab0902c305a2603a4c4ec672308db563ff9749a9b9a7a34ec",
+  "cases": {
+    "distillation_b": {
+      "scenario": "ScenarioB_BinaryComponent_n-butanolwater",
+      "runs": [
+        "006",
+        "001"
+      ],
+      "target": "007",
+      "target_role": "previously_scored_development_regression"
+    },
+    "distillation_c": {
+      "scenario": "ScenarioC_ReactiveOME",
+      "runs": [
+        "006",
+        "001",
+        "002"
+      ],
+      "target": "003",
+      "target_role": "previously_scored_development_regression"
+    }
+  },
+  "grid": {
+    "na": [
+      1,
+      2
+    ],
+    "nb": [
+      1,
+      2
+    ],
+    "alpha": [
+      0.0,
+      0.001
+    ]
+  },
+  "arms": {
+    "pooled_controls": [
+      "pooled",
+      [
+        "M101",
+        "TH101_SetPoint",
+        "TV101",
+        "T116"
+      ]
+    ],
+    "multihorizon_controls": [
+      "multihorizon",
+      [
+        "M101",
+        "TH101_SetPoint",
+        "TV101",
+        "T116"
+      ]
+    ],
+    "pooled_pressure": [
+      "pooled",
+      [
+        "M101",
+        "TH101_SetPoint",
+        "TV101",
+        "T116",
+        "PIC101"
+      ]
+    ],
+    "multihorizon_pressure": [
+      "multihorizon",
+      [
+        "M101",
+        "TH101_SetPoint",
+        "TV101",
+        "T116",
+        "PIC101"
+      ]
+    ]
+  },
+  "train": "[10,floor(N*.6)-10)",
+  "validation": "[floor(N*.6)+10,floor(N*.8)-10)",
+  "source_test": "all tails >=floor(N*.8) removed before fitting",
+  "delay": 1,
+  "selection": "mean leave-one-source-run-out Validation RMSE/persistence; held run excluded from fit and scaling",
+  "forecast_start": 43,
+  "initialization": "fixed measured pre-origin history; no target offsets or future output updates",
+  "multihorizon": [
+    1,
+    16,
+    64,
+    0
+  ],
+  "max_nfev_per_start": 150,
+  "comparison": "8 structures per arm, unequal solver budget and regularization conventions; newly fitted matched source grid, not comparison to prior exhaustive winners",
+  "scope": "B/C same pilot apparatus, known targets; measured T116 and PIC101 conditional inputs; no causality or factory-transfer claim",
+  "code_sha256": {
+    "backend/scripts/benchmark_multihorizon_transfer.py": "a7b2dba17f8b93b631791aa2080ffb895ace87e8dc0f006e2ce89fdde74166ce",
+    "backend/scripts/benchmark_operating_points.py": "3e1c7aa98bd85e6b433ad554bfa47ec674c5e70301c452e8a7660ad91ae1bc75",
+    "backend/scripts/benchmark_initial_and_oe.py": "3a667b2329dccca8e2289456e067d5328e21257c4c0ebc35031699bce16139c7",
+    "backend/scripts/benchmark_validation_guarded.py": "b752f00dfc187ff9412aaea5b890e5372f684bee2f52cf834c06e3ce297be496",
+    "backend/scripts/benchmark_oe_transfer.py": "af7f01d50c408da822f33c962b2f03d29c9ef1cc1a71e38996f3e52051cde25a",
+    "backend/algorithms/identifiability/multihorizon.py": "c360c1483eae04dbd2fdc30d775219cac8a0541525ec674002e98c7a84f7c765",
+    "backend/algorithms/identifiability/output_error.py": "2c8b3918119c0345d33a38bc5ed420ad71f688b79bcc61884cacc0a064d1bc2d",
+    "backend/algorithms/identifiability/experiments.py": "2a54b69ba5286f758b99f080cd3d3d8b19fbf83718ee3e514ba3e8b95f81e54c",
+    "backend/algorithms/identifiability/estimation.py": "93f99e695e518aafe60e97bc486d630911f3d8dc0aa70fd5aa54b11618963d76",
+    "backend/algorithms/identifiability/regressor.py": "2e42a2d99fd9e9a49bc634593e38385dc88681bd2f61c4965cf723b3c8100d5b",
+    "backend/algorithms/identifiability/validation.py": "1c36f784f6c0a85a23ce2cf24e425df4c23c2b290642becda6d76a06f2f83931",
+    "backend/algorithms/identifiability/support.py": "b0fd7ccbfe6d92e1da6a2e1cccf335b3f516af27f87831dd8fe9ef2e28fb7e5e"
+  }
+}

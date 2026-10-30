@@ -1,0 +1,72 @@
+{
+  "verified_at": "2026-10-03T11:45:00.614573+00:00",
+  "all_5_api_studies_match_frozen_models": true,
+  "all_5_exports_values_and_hashes_verified": true,
+  "all_5_model_artifacts_unchanged_after_evaluation": true,
+  "all_5_real_llm_reports_fully_resolved": true,
+  "numeric_algorithm_snapshot_unchanged": true,
+  "reporting_changes": [
+    {
+      "path": "algorithms/agent/llm_planner.py",
+      "frozen_sha256": "5b0acaca27538f7a9f976e2b8ca36cb6b8c55a9dd092c4e9d993a7ba45237a9f",
+      "current_sha256": "b97a47d106dee9dbd9ddc7a508d1f9468da3499f825ce47be7585930eddf7a56"
+    },
+    {
+      "path": "app/services/report_service.py",
+      "frozen_sha256": "005d0a65823e535d4f9a795f9c0270fec4a84d4d9d44a704300e4ec7e7b484cd",
+      "current_sha256": "dfd4dbd29270b5ce0ac6014d790bee48af34a61634d7d934e234779c3686c225"
+    }
+  ],
+  "fixed_model_count": 35,
+  "source_trials": 250,
+  "tests_passed": 68,
+  "ruff_scope": "changed reporting modules, reporting tests, four new benchmark scripts (scripts use E402 exception for local imports)",
+  "reports": {
+    "boiler": {
+      "bindings": 27,
+      "markdown": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/api-artifacts/reports/361549ca-b083-4324-b688-969e30861e11.md",
+      "html": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/api-artifacts/reports/361549ca-b083-4324-b688-969e30861e11.html"
+    },
+    "exchanger": {
+      "bindings": 33,
+      "markdown": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/api-artifacts/reports/5f12bb6c-7261-4be4-89ca-2b336c7b1ec6.md",
+      "html": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/api-artifacts/reports/5f12bb6c-7261-4be4-89ca-2b336c7b1ec6.html"
+    },
+    "distillation_a": {
+      "bindings": 34,
+      "markdown": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/api-artifacts/reports/72af036e-f0ce-479d-a757-0f02fd6e8bc3.md",
+      "html": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/api-artifacts/reports/72af036e-f0ce-479d-a757-0f02fd6e8bc3.html"
+    },
+    "distillation_b": {
+      "bindings": 29,
+      "markdown": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/api-artifacts/reports/e2da91fd-7501-42fd-ba1e-3a6e0dd789a1.md",
+      "html": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/api-artifacts/reports/e2da91fd-7501-42fd-ba1e-3a6e0dd789a1.html"
+    },
+    "distillation_c": {
+      "bindings": 29,
+      "markdown": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/api-artifacts/reports/e22352f8-e73b-44cf-9b3a-b3322f8805da.md",
+      "html": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/api-artifacts/reports/e22352f8-e73b-44cf-9b3a-b3322f8805da.html"
+    }
+  },
+  "files_sha256": {
+    "audit.json": "2f07eba7626ee65d9327711ee87d83ecc2e4c59904681277d2987b73a03cc4ab",
+    "cross-run-results.json": "8791b41f9a24374448b5585c913ac176b9eb3c384038578d560d9d3b618133a3",
+    "download-manifest.json": "c1efdf79ed4f867f9b8716fcdd49179403f3dff85eb7d8eb7cdd24346b32f34a",
+    "test-results.json": "db7dfc8a737677743b0b6d5710fd964432900a30e0cdf65d62c6952df6a149db",
+    "api-integration.json": "89dd3b9fdaa65b4acdababb269f4dd18aa29feb1be31b48363bd3dd6e8ced416",
+    "development.json": "e99296e3777f4038521662414d4ed0774e7b67e40334326bdf724323bd0aa9a0",
+    "freeze-seal.json": "2f1efa30c2d5cbc8140bef1fd960639e905ef9ae271e9b4639d65b842b5e3e81",
+    "protocol.json": "03a19cf9257b418f92c06ede5e876004d93fc46640f3c24a568897b07fdf572c",
+    "post-confirmation-report-fix.json": "f72181816ec4ca3eea935ccd37513ccb2a485598b5b137da937c2852742c21b3",
+    "data-manifest.json": "7843a92809a57ab818b72a0b10de773c3de8af75251b268d1270e864a1056a02",
+    "cross-run-protocol.json": "c097096a16bfe6d24911adb31f5f7ff62ff7b3f539a10889acc41f8cf1b81418"
+  },
+  "scripts_sha256": {
+    "prepare_generalization_data.py": "81d7ab53fd572e09b82130fcb5e953b492e1fa8a0135701f324933db8703c6ab",
+    "benchmark_generalization.py": "9c0c90d14e987fab68debeaf640859a95d67a9efa415230ba8985e34e7c004c1",
+    "smoke_generalization_api.py": "42285e07a4d9c29aaf082c0461e68c6e0c9ca91727be07489bc58cf7f39f9514",
+    "benchmark_cross_run.py": "cf50d5db1181f5eea241a52f9134eecd571242664e53344bd175fab03514bc83"
+  },
+  "inactive_report_parameters_excluded": true,
+  "report_sha256": "fd3233c2fa47dabe7ae5423a92ebfaeb8853fbae8090379c9414b373bde845d9"
+}

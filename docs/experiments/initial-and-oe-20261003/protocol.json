@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-10-03T16:25:22.125305+00:00",
+  "initial_snapshot": {
+    "commit": "f83223763a09130f9b63717b52152b2f0b0b48a5",
+    "source_sha256": {
+      "backend/app/services/modeling_service.py": "410a5f8add739f540eba3a51953231c4b1f0ef31c6da4d75c90575af56f33394",
+      "backend/app/services/optimization_service.py": "6cbbd0b9d44b401d5429c1fe4d2475a4437e1fcc33d63420d7c54c8adc64dd59"
+    },
+    "extraction": "verbatim_AST_functions_only"
+  },
+  "manifest_sha256": "7843a92809a57ab818b72a0b10de773c3de8af75251b268d1270e864a1056a02",
+  "code_sha256": {
+    "backend/scripts/benchmark_initial_and_oe.py": "33fb654a08adb7e68c54b30aa958d1332b4ac39d62d7cfb430caa32a126f2c1e",
+    "backend/algorithms/identifiability/output_error.py": "2c8b3918119c0345d33a38bc5ed420ad71f688b79bcc61884cacc0a064d1bc2d",
+    "backend/algorithms/identifiability/estimation.py": "93f99e695e518aafe60e97bc486d630911f3d8dc0aa70fd5aa54b11618963d76",
+    "backend/algorithms/identifiability/regressor.py": "2e42a2d99fd9e9a49bc634593e38385dc88681bd2f61c4965cf723b3c8100d5b",
+    "backend/algorithms/identifiability/validation.py": "8b51dd4a46235483e5b09458e421037db72b4fd79f44233b07bf01399a67077f",
+    "backend/app/services/optimization_service.py": "753b7126334c51c68546a0da0cf9d020bea49b9bbe20d9a8fe4d5127aec0bcea"
+  },
+  "train_ratio": 0.6,
+  "validation_ratio": 0.2,
+  "history_guard": 43,
+  "train_start": 43,
+  "train_stop": "floor(N*.6)-43",
+  "validation_start": "floor(N*.6)+43",
+  "validation_stop": "floor(N*.8)",
+  "test_start": "floor(N*.8)+43",
+  "test_stop": "N",
+  "data_selection": "all_contiguous_train_rows",
+  "delay_selection": "earliest_40_percent_train_only",
+  "selection_objective": "minimum_validation_free_run_RMSE_no_test_access",
+  "model_only": true,
+  "end_to_end_original_replay": false,
+  "original_harmonization": "common training rows, safe simulator, validation scoring, delays; original estimator and grid verbatim",
+  "equal_candidate_budget": [
+    "initial24",
+    "affine24",
+    "oe24"
+  ],
+  "equal_cpu_budget": false,
+  "expanded_grid_budget": {
+    "current102": 102
+  },
+  "oe": {
+    "denominator": "shared",
+    "starts": 2,
+    "max_nfev_per_start": 100,
+    "ridge_candidates": [
+      0.0,
+      0.1
+    ],
+    "convergence_required": true
+  },
+  "previously_inspected_test": true,
+  "evidence_role": "development_regression_not_fresh_confirmation"
+}

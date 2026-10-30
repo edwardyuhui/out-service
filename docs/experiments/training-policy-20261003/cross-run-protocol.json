@@ -1,0 +1,31 @@
+{
+  "frozen_at": "2026-10-03T14:11:08.151077+00:00",
+  "source_dataset": "distillation_a",
+  "source_file": "ContinuousDistillationData/ScenarioA_SingleComponent_Water/operating_point_004/train_normal_experiment_001.csv",
+  "targets": [
+    {
+      "kind": "same_operating_point_new_run",
+      "member": "ContinuousDistillationData/ScenarioA_SingleComponent_Water/operating_point_004/train_normal_experiment_002.csv",
+      "evidence_role": "regression_transfer"
+    },
+    {
+      "kind": "different_operating_point_new_run",
+      "member": "ContinuousDistillationData/ScenarioA_SingleComponent_Water/operating_point_006/train_normal_experiment_001.csv",
+      "evidence_role": "regression_transfer"
+    },
+    {
+      "kind": "different_operating_point_op007",
+      "evidence_role": "new_operating_run_transfer",
+      "member": "ContinuousDistillationData/ScenarioA_SingleComponent_Water/operating_point_007/train_normal_experiment_001.csv"
+    }
+  ],
+  "source_models": [
+    "original_grid_full_train",
+    "current_grid_full_train",
+    "optimizer_seed_chosen_by_source_validation"
+  ],
+  "test_rule": "fixed coefficients and source intercept; no refit or target selection; evaluate whole target from sample 43; initial observer/warm history may use preceding 43 actual target output rows, then frozen throughout free-run",
+  "target_choice": "metadata and rowcount only, before any confirmation metrics",
+  "source_validation_only": true,
+  "scope": "The previous two transfers are regression evidence. Op007 is a new run on the same apparatus; it is also evaluated with independent chronological fitting in a separate experiment. Source coefficient choice sees only op004 source Validation."
+}

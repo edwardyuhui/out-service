@@ -1,0 +1,1090 @@
+{
+  "seal_sha256": "8cc4a28b602c3d2a5297720975beb2b1edcee6ddf8eadfa8a76c28bf0a0b37ec",
+  "results": [
+    {
+      "case": "distillation_b",
+      "role": "both target runs have already been scored, including C op003 in stage one; development regression only",
+      "time_audit": {
+        "first_break_row": null,
+        "original_rows": 548,
+        "retained_rows": 548
+      },
+      "selected_family": "global",
+      "local": {
+        "controls:past_block": {
+          "rmse": 2.643806915683851,
+          "fit": -2.723061246019731,
+          "n_samples": 505,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "past_block",
+            "context_start": 0,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_001/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              1.0,
+              0.0
+            ],
+            "scores": [
+              0.1529041455405453,
+              5.459718628603604
+            ],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": true,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 548,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "M101",
+                "T116"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0039603960396039604
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "TV101": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.033663366336633666
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.1206463451266453
+        },
+        "controls:nearest_input": {
+          "rmse": 2.643806915683851,
+          "fit": -2.723061246019731,
+          "n_samples": 505,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "nearest_input",
+            "context_start": 11,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_001/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              1.0,
+              0.0
+            ],
+            "scores": [
+              0.10422305623107044,
+              1.2299976445116514
+            ],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 548,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "M101",
+                "T116"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0039603960396039604
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "TV101": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.033663366336633666
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.1206463451266453
+        },
+        "controls:uniform": {
+          "rmse": 3.9823772812760168,
+          "fit": -54.73217160545176,
+          "n_samples": 505,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "uniform",
+            "context_start": 11,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_001/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              0.5,
+              0.5
+            ],
+            "scores": [],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 548,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "M101",
+                "T116"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0039603960396039604
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "TV101": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.033663366336633666
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            },
+            "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_001/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 548,
+              "status": "unsupported",
+              "unsupported_constant_inputs": [
+                "TH101_SetPoint"
+              ],
+              "extrapolated_inputs": [
+                "M101",
+                "T116"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.031683168316831684
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.1206463451266453
+        },
+        "pressure:past_block": {
+          "rmse": 2.625985193680452,
+          "fit": -2.030612100053575,
+          "n_samples": 505,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "past_block",
+            "context_start": 0,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_001/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              1.0,
+              0.0
+            ],
+            "scores": [
+              0.15492537426381794,
+              5.906876007640528
+            ],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": true,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 548,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "M101",
+                "T116",
+                "PIC101"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0039603960396039604
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "TV101": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.033663366336633666
+                },
+                "PIC101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.998019801980198
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.01827645679358
+        },
+        "pressure:nearest_input": {
+          "rmse": 2.625985193680452,
+          "fit": -2.030612100053575,
+          "n_samples": 505,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "nearest_input",
+            "context_start": 11,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_001/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              1.0,
+              0.0
+            ],
+            "scores": [
+              0.1150695119070918,
+              2.131186321437512
+            ],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 548,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "M101",
+                "T116",
+                "PIC101"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0039603960396039604
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "TV101": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.033663366336633666
+                },
+                "PIC101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.998019801980198
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.01827645679358
+        },
+        "pressure:uniform": {
+          "rmse": 4.168377326886235,
+          "fit": -61.95905869907252,
+          "n_samples": 505,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "uniform",
+            "context_start": 11,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_001/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              0.5,
+              0.5
+            ],
+            "scores": [],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_006/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 548,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "M101",
+                "T116",
+                "PIC101"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0039603960396039604
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "TV101": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.033663366336633666
+                },
+                "PIC101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.998019801980198
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            },
+            "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_001/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 548,
+              "status": "unsupported",
+              "unsupported_constant_inputs": [
+                "TH101_SetPoint"
+              ],
+              "extrapolated_inputs": [
+                "M101",
+                "T116",
+                "PIC101"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.031683168316831684
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 0.0
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                },
+                "PIC101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.01827645679358
+        }
+      },
+      "global": {
+        "controls": {
+          "rmse": 2.9393515525246032,
+          "fit": -14.206218223567957,
+          "n_samples": 505
+        },
+        "pressure": {
+          "rmse": 2.934748942083188,
+          "fit": -14.027387374968402,
+          "n_samples": 505
+        }
+      },
+      "persistence_rmse": 2.7283345298791146,
+      "selected_local": "pressure:past_block",
+      "selected_global": "controls",
+      "selected_result": {
+        "rmse": 2.9393515525246032,
+        "fit": -14.206218223567957,
+        "n_samples": 505
+      }
+    },
+    {
+      "case": "distillation_c",
+      "role": "both target runs have already been scored, including C op003 in stage one; development regression only",
+      "time_audit": {
+        "first_break_row": null,
+        "original_rows": 120,
+        "retained_rows": 120
+      },
+      "selected_family": "global",
+      "local": {
+        "controls:past_block": {
+          "rmse": 2.008769494350934,
+          "fit": -108.27653232858898,
+          "n_samples": 77,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "past_block",
+            "context_start": 0,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_001/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_002/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "scores": [
+              0.748575265648527,
+              1.9262513471065725,
+              0.9798608446619661
+            ],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": true,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_006/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 120,
+              "status": "unsupported",
+              "unsupported_constant_inputs": [
+                "TH101_SetPoint"
+              ],
+              "extrapolated_inputs": [
+                "M101",
+                "TV101",
+                "T116"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.18181818181818182
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.07792207792207792
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.6299814857551087
+        },
+        "controls:nearest_input": {
+          "rmse": 2.008769494350934,
+          "fit": -108.27653232858898,
+          "n_samples": 77,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "nearest_input",
+            "context_start": 11,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_001/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_002/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "scores": [
+              0.6693542703789053,
+              3.303140715111185,
+              3.943677250173949
+            ],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_006/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 120,
+              "status": "unsupported",
+              "unsupported_constant_inputs": [
+                "TH101_SetPoint"
+              ],
+              "extrapolated_inputs": [
+                "M101",
+                "TV101",
+                "T116"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.18181818181818182
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.07792207792207792
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.7100776214985418
+        },
+        "controls:uniform": {
+          "rmse": 0.8738780219255698,
+          "fit": 9.393146104285,
+          "n_samples": 77,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "uniform",
+            "context_start": 11,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_001/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_002/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              0.3333333333333333,
+              0.3333333333333333,
+              0.3333333333333333
+            ],
+            "scores": [],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_006/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 120,
+              "status": "unsupported",
+              "unsupported_constant_inputs": [
+                "TH101_SetPoint"
+              ],
+              "extrapolated_inputs": [
+                "M101",
+                "TV101",
+                "T116"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.18181818181818182
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.07792207792207792
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            },
+            "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_001/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 120,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "M101",
+                "TH101_SetPoint",
+                "TV101",
+                "T116"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.12987012987012986
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.2857142857142857
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            },
+            "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_002/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 120,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "TH101_SetPoint",
+                "TV101",
+                "T116"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.45454545454545453
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.6215268456676435
+        },
+        "pressure:past_block": {
+          "rmse": 1.8449117516320748,
+          "fit": -91.28716518385282,
+          "n_samples": 77,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "past_block",
+            "context_start": 0,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_001/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_002/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              0.0,
+              0.0,
+              1.0
+            ],
+            "scores": [
+              0.7943467450106613,
+              2.798443250378148,
+              0.2777811928961992
+            ],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": true,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_002/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 120,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "TH101_SetPoint",
+                "TV101",
+                "T116"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.45454545454545453
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                },
+                "PIC101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.5130156464305735
+        },
+        "pressure:nearest_input": {
+          "rmse": 1.7035850032701727,
+          "fit": -76.63389353826611,
+          "n_samples": 77,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "nearest_input",
+            "context_start": 11,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_001/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_002/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "scores": [
+              0.6456850373001769,
+              2.6874271162240264,
+              3.159185152544125
+            ],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_006/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 120,
+              "status": "unsupported",
+              "unsupported_constant_inputs": [
+                "TH101_SetPoint"
+              ],
+              "extrapolated_inputs": [
+                "M101",
+                "TV101",
+                "T116",
+                "PIC101"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.18181818181818182
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.07792207792207792
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                },
+                "PIC101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.07792207792207792
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.5301094002759685
+        },
+        "pressure:uniform": {
+          "rmse": 1.3462385422035086,
+          "fit": -39.58291185014242,
+          "n_samples": 77,
+          "routing": {
+            "policy_version": "frozen_local_routing_v1",
+            "policy": "uniform",
+            "context_start": 11,
+            "context_stop": 43,
+            "models": [
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_006/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_001/train_normal_experiment_001.csv",
+              "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_002/train_normal_experiment_001.csv"
+            ],
+            "weights": [
+              0.3333333333333333,
+              0.3333333333333333,
+              0.3333333333333333
+            ],
+            "scores": [],
+            "forecast_updates": false,
+            "coefficient_refit": false,
+            "routing_uses_target_past": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "active_input_support": {
+            "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_006/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 120,
+              "status": "unsupported",
+              "unsupported_constant_inputs": [
+                "TH101_SetPoint"
+              ],
+              "extrapolated_inputs": [
+                "M101",
+                "TV101",
+                "T116",
+                "PIC101"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.18181818181818182
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": true,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.07792207792207792
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                },
+                "PIC101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.07792207792207792
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            },
+            "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_001/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 120,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "M101",
+                "TH101_SetPoint",
+                "TV101",
+                "T116",
+                "PIC101"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.12987012987012986
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.2857142857142857
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                },
+                "PIC101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.012987012987012988
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            },
+            "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_002/train_normal_experiment_001.csv": {
+              "policy_version": "known_input_support_v1",
+              "start": 43,
+              "stop": 120,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "TH101_SetPoint",
+                "TV101",
+                "T116"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "M101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "TH101_SetPoint": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                },
+                "TV101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.45454545454545453
+                },
+                "T116": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 1.0
+                },
+                "PIC101": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          },
+          "validation_risk": 1.6563422165630837
+        }
+      },
+      "global": {
+        "controls": {
+          "rmse": 2.7074614184560843,
+          "fit": -180.71945399174908,
+          "n_samples": 77
+        },
+        "pressure": {
+          "rmse": 1.33454972641989,
+          "fit": -38.37097288686859,
+          "n_samples": 77
+        }
+      },
+      "persistence_rmse": 1.5766724783213832,
+      "selected_local": "pressure:past_block",
+      "selected_global": "pressure",
+      "selected_result": {
+        "rmse": 1.33454972641989,
+        "fit": -38.37097288686859,
+        "n_samples": 77
+      }
+    }
+  ]
+}

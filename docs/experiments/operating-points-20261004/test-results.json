@@ -1,0 +1,597 @@
+{
+  "seal_sha256": "ac12b98fd9aaaf19521b257fa058771baec55457d340ed7ad12486627fbae58f",
+  "comparison_protocol_sha256": "10cb40d165533730008b7076dbc60f8776121cac089e27d0bdf760182238d125",
+  "results": [
+    {
+      "case": "distillation_b",
+      "member": "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_007/train_normal_experiment_001.csv",
+      "role": "previously_scored_normal_run_regression",
+      "rows": 548,
+      "retained_rows": 548,
+      "time_audit": {
+        "first_break_row": null,
+        "original_rows": 548,
+        "retained_rows": 548
+      },
+      "selected_arm": "within_run_pressure",
+      "arms": {
+        "pooled": {
+          "status": "scored_for_research",
+          "rmse": 2.9393515525246032,
+          "fit": -14.206218223567957,
+          "n_samples": 505,
+          "input_support": {
+            "policy_version": "known_input_support_v1",
+            "start": 43,
+            "stop": 548,
+            "status": "extrapolation",
+            "unsupported_constant_inputs": [],
+            "extrapolated_inputs": [
+              "T116"
+            ],
+            "unavailable_inputs": [],
+            "evidence": {
+              "M101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TH101_SetPoint": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TV101": {
+                "constant_in_train": true,
+                "outside_train_range_fraction": 0.0
+              },
+              "T116": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.033663366336633666
+              }
+            },
+            "coefficient_updates": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "coefficient_refit": false,
+          "initialization": {
+            "policy": "past_residual",
+            "window": 32,
+            "context_start": 11,
+            "context_stop": 43,
+            "forecast_updates": false,
+            "offset_kind": "equation_disturbance",
+            "assumption": "constant_disturbance_over_forecast",
+            "status": "initialized",
+            "samples": 32,
+            "offset": -2.971915059134183
+          },
+          "rmse_vs_persistence": 1.0773427966162339,
+          "between_run_only_inputs": []
+        },
+        "within_run": {
+          "status": "scored_for_research",
+          "rmse": 2.9393509054530567,
+          "fit": -14.206193082106289,
+          "n_samples": 505,
+          "input_support": {
+            "policy_version": "known_input_support_v1",
+            "start": 43,
+            "stop": 548,
+            "status": "extrapolation",
+            "unsupported_constant_inputs": [],
+            "extrapolated_inputs": [
+              "T116"
+            ],
+            "unavailable_inputs": [],
+            "evidence": {
+              "M101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TH101_SetPoint": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TV101": {
+                "constant_in_train": true,
+                "outside_train_range_fraction": 0.0
+              },
+              "T116": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.031683168316831684
+              }
+            },
+            "coefficient_updates": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "coefficient_refit": false,
+          "initialization": {
+            "policy": "past_residual",
+            "window": 32,
+            "context_start": 11,
+            "context_stop": 43,
+            "forecast_updates": false,
+            "offset_kind": "equation_disturbance",
+            "assumption": "constant_disturbance_over_forecast",
+            "status": "initialized",
+            "samples": 32,
+            "offset": -2.7195906283647275
+          },
+          "rmse_vs_persistence": 1.0773425594490027,
+          "between_run_only_inputs": [
+            "TH101_SetPoint"
+          ]
+        },
+        "pooled_pressure": {
+          "status": "scored_for_research",
+          "rmse": 2.934748942083188,
+          "fit": -14.027387374968402,
+          "n_samples": 505,
+          "input_support": {
+            "policy_version": "known_input_support_v1",
+            "start": 43,
+            "stop": 548,
+            "status": "extrapolation",
+            "unsupported_constant_inputs": [],
+            "extrapolated_inputs": [
+              "T116",
+              "PIC101"
+            ],
+            "unavailable_inputs": [],
+            "evidence": {
+              "M101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TH101_SetPoint": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TV101": {
+                "constant_in_train": true,
+                "outside_train_range_fraction": 0.0
+              },
+              "T116": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.033663366336633666
+              },
+              "PIC101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.998019801980198
+              }
+            },
+            "coefficient_updates": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "coefficient_refit": false,
+          "initialization": {
+            "policy": "past_residual",
+            "window": 32,
+            "context_start": 11,
+            "context_stop": 43,
+            "forecast_updates": false,
+            "offset_kind": "equation_disturbance",
+            "assumption": "constant_disturbance_over_forecast",
+            "status": "initialized",
+            "samples": 32,
+            "offset": -2.9694825373748763
+          },
+          "rmse_vs_persistence": 1.0756558295705838,
+          "between_run_only_inputs": []
+        },
+        "within_run_pressure": {
+          "status": "scored_for_research",
+          "rmse": 2.934665298896864,
+          "fit": -14.024137484024934,
+          "n_samples": 505,
+          "input_support": {
+            "policy_version": "known_input_support_v1",
+            "start": 43,
+            "stop": 548,
+            "status": "extrapolation",
+            "unsupported_constant_inputs": [],
+            "extrapolated_inputs": [
+              "T116",
+              "PIC101"
+            ],
+            "unavailable_inputs": [],
+            "evidence": {
+              "M101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TH101_SetPoint": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TV101": {
+                "constant_in_train": true,
+                "outside_train_range_fraction": 0.0
+              },
+              "T116": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.031683168316831684
+              },
+              "PIC101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.998019801980198
+              }
+            },
+            "coefficient_updates": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "coefficient_refit": false,
+          "initialization": {
+            "policy": "past_residual",
+            "window": 32,
+            "context_start": 11,
+            "context_stop": 43,
+            "forecast_updates": false,
+            "offset_kind": "equation_disturbance",
+            "assumption": "constant_disturbance_over_forecast",
+            "status": "initialized",
+            "samples": 32,
+            "offset": -2.667555217729987
+          },
+          "rmse_vs_persistence": 1.0756251723379726,
+          "between_run_only_inputs": [
+            "TH101_SetPoint"
+          ]
+        },
+        "previous_temporal_pooled": {
+          "status": "scored_for_research",
+          "rmse": 2.7953984153658626,
+          "fit": -8.6130310519968,
+          "n_samples": 505,
+          "input_support": {
+            "policy_version": "known_input_support_v1",
+            "start": 43,
+            "stop": 548,
+            "status": "extrapolation",
+            "unsupported_constant_inputs": [],
+            "extrapolated_inputs": [
+              "T116"
+            ],
+            "unavailable_inputs": [],
+            "evidence": {
+              "M101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TH101_SetPoint": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TV101": {
+                "constant_in_train": true,
+                "outside_train_range_fraction": 0.0
+              },
+              "T116": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.033663366336633666
+              }
+            },
+            "coefficient_updates": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "coefficient_refit": false,
+          "initialization": {
+            "policy": "past_residual",
+            "window": 32,
+            "context_start": 11,
+            "context_stop": 43,
+            "forecast_updates": false,
+            "offset_kind": "equation_disturbance",
+            "assumption": "constant_disturbance_over_forecast",
+            "status": "initialized",
+            "samples": 32,
+            "offset": -1.4807070448433954
+          },
+          "rmse_vs_persistence": 1.0245805214691615,
+          "between_run_only_inputs": []
+        }
+      },
+      "persistence_rmse": 2.7283345298791146,
+      "context_mean_rmse": 3.0752680709856177
+    },
+    {
+      "case": "distillation_c",
+      "member": "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_003/train_normal_experiment_001.csv",
+      "role": "previously_unscored_normal_independent_run",
+      "rows": 120,
+      "retained_rows": 120,
+      "time_audit": {
+        "first_break_row": null,
+        "original_rows": 120,
+        "retained_rows": 120
+      },
+      "selected_arm": "pooled",
+      "arms": {
+        "pooled": {
+          "status": "scored_for_research",
+          "rmse": 2.7042982601643106,
+          "fit": -180.39148622736909,
+          "n_samples": 77,
+          "input_support": {
+            "policy_version": "known_input_support_v1",
+            "start": 43,
+            "stop": 120,
+            "status": "extrapolation",
+            "unsupported_constant_inputs": [],
+            "extrapolated_inputs": [
+              "TH101_SetPoint",
+              "TV101"
+            ],
+            "unavailable_inputs": [],
+            "evidence": {
+              "M101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TH101_SetPoint": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 1.0
+              },
+              "TV101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.012987012987012988
+              },
+              "T116": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              }
+            },
+            "coefficient_updates": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "coefficient_refit": false,
+          "initialization": {
+            "policy": "past_residual",
+            "window": 32,
+            "context_start": 11,
+            "context_stop": 43,
+            "forecast_updates": false,
+            "offset_kind": "equation_disturbance",
+            "assumption": "constant_disturbance_over_forecast",
+            "status": "initialized",
+            "samples": 32,
+            "offset": -0.1003515929494565
+          },
+          "rmse_vs_persistence": 1.7151934199063734,
+          "between_run_only_inputs": []
+        },
+        "within_run": {
+          "status": "scored_for_research",
+          "rmse": 2.3000983320631785,
+          "fit": -138.48256654837402,
+          "n_samples": 77,
+          "input_support": {
+            "policy_version": "known_input_support_v1",
+            "start": 43,
+            "stop": 120,
+            "status": "extrapolation",
+            "unsupported_constant_inputs": [],
+            "extrapolated_inputs": [
+              "TH101_SetPoint",
+              "TV101"
+            ],
+            "unavailable_inputs": [],
+            "evidence": {
+              "M101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TH101_SetPoint": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 1.0
+              },
+              "TV101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.012658227848101266
+              },
+              "T116": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              }
+            },
+            "coefficient_updates": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "coefficient_refit": false,
+          "initialization": {
+            "policy": "past_residual",
+            "window": 32,
+            "context_start": 11,
+            "context_stop": 43,
+            "forecast_updates": false,
+            "offset_kind": "equation_disturbance",
+            "assumption": "constant_disturbance_over_forecast",
+            "status": "initialized",
+            "samples": 32,
+            "offset": 0.005792265693399301
+          },
+          "rmse_vs_persistence": 1.458830774107249,
+          "between_run_only_inputs": []
+        },
+        "pooled_pressure": {
+          "status": "scored_for_research",
+          "rmse": 1.9301385895540364,
+          "fit": -100.12379393276376,
+          "n_samples": 77,
+          "input_support": {
+            "policy_version": "known_input_support_v1",
+            "start": 43,
+            "stop": 120,
+            "status": "extrapolation",
+            "unsupported_constant_inputs": [],
+            "extrapolated_inputs": [
+              "TH101_SetPoint",
+              "TV101"
+            ],
+            "unavailable_inputs": [],
+            "evidence": {
+              "M101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TH101_SetPoint": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 1.0
+              },
+              "TV101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.012987012987012988
+              },
+              "T116": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "PIC101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              }
+            },
+            "coefficient_updates": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "coefficient_refit": false,
+          "initialization": {
+            "policy": "past_residual",
+            "window": 32,
+            "context_start": 11,
+            "context_stop": 43,
+            "forecast_updates": false,
+            "offset_kind": "equation_disturbance",
+            "assumption": "constant_disturbance_over_forecast",
+            "status": "initialized",
+            "samples": 32,
+            "offset": -0.05257950328231065
+          },
+          "rmse_vs_persistence": 1.2241848678737475,
+          "between_run_only_inputs": []
+        },
+        "within_run_pressure": {
+          "status": "scored_for_research",
+          "rmse": 2.0024479131784947,
+          "fit": -107.62108778448778,
+          "n_samples": 77,
+          "input_support": {
+            "policy_version": "known_input_support_v1",
+            "start": 43,
+            "stop": 120,
+            "status": "extrapolation",
+            "unsupported_constant_inputs": [],
+            "extrapolated_inputs": [
+              "TH101_SetPoint",
+              "TV101"
+            ],
+            "unavailable_inputs": [],
+            "evidence": {
+              "M101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TH101_SetPoint": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 1.0
+              },
+              "TV101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.01282051282051282
+              },
+              "T116": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "PIC101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              }
+            },
+            "coefficient_updates": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "coefficient_refit": false,
+          "initialization": {
+            "policy": "past_residual",
+            "window": 32,
+            "context_start": 11,
+            "context_stop": 43,
+            "forecast_updates": false,
+            "offset_kind": "equation_disturbance",
+            "assumption": "constant_disturbance_over_forecast",
+            "status": "initialized",
+            "samples": 32,
+            "offset": -0.05808543766116259
+          },
+          "rmse_vs_persistence": 1.2700468491150532,
+          "between_run_only_inputs": []
+        },
+        "previous_temporal_pooled": {
+          "status": "scored_for_research",
+          "rmse": 2.7042982601643106,
+          "fit": -180.39148622736909,
+          "n_samples": 77,
+          "input_support": {
+            "policy_version": "known_input_support_v1",
+            "start": 43,
+            "stop": 120,
+            "status": "extrapolation",
+            "unsupported_constant_inputs": [],
+            "extrapolated_inputs": [
+              "TH101_SetPoint",
+              "TV101"
+            ],
+            "unavailable_inputs": [],
+            "evidence": {
+              "M101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              },
+              "TH101_SetPoint": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 1.0
+              },
+              "TV101": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.012987012987012988
+              },
+              "T116": {
+                "constant_in_train": false,
+                "outside_train_range_fraction": 0.0
+              }
+            },
+            "coefficient_updates": false,
+            "deployment_ready": false
+          },
+          "future_output_invariance": true,
+          "coefficient_refit": false,
+          "initialization": {
+            "policy": "past_residual",
+            "window": 32,
+            "context_start": 11,
+            "context_stop": 43,
+            "forecast_updates": false,
+            "offset_kind": "equation_disturbance",
+            "assumption": "constant_disturbance_over_forecast",
+            "status": "initialized",
+            "samples": 32,
+            "offset": -0.1003515929494565
+          },
+          "rmse_vs_persistence": 1.7151934199063734,
+          "between_run_only_inputs": []
+        }
+      },
+      "persistence_rmse": 1.5766724783213832,
+      "context_mean_rmse": 1.4992918461645988
+    }
+  ]
+}

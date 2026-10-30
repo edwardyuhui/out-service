@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-03T15:32:45.656213+00:00",
+  "backend_numerical_source_matches_protocol": true,
+  "previous_evidence_unchanged": true,
+  "completed_pre_repair_rows_unchanged": true,
+  "frozen_development_unchanged": true,
+  "default_search": "established",
+  "default_grid_unchanged": true,
+  "backend_tests": {
+    "full_run_passed": 628,
+    "full_run_skipped": 3,
+    "final_disturbance_tests_passed": 8,
+    "added_after_full_run": 2,
+    "isolated_redis_rq_passed": 3,
+    "distinct_passed": 633
+  },
+  "frontend_tests": {
+    "full_passed": 279,
+    "after_model_card_edit_focused_passed": 51,
+    "final_policy_ui_passed": 6
+  },
+  "vue_typecheck": "passed",
+  "production_build": "passed",
+  "ruff_changed_files": "passed",
+  "git_diff_check": "passed",
+  "backend_typing": "8 existing errors in 4 files across changed-module dependency check; not a full-project typing pass",
+  "api_cases": 5,
+  "real_deepseek_reports": 5,
+  "trial_count_retained": 150,
+  "successful_closed_loop_model_fold_fits": 18698,
+  "new_target_runs": 3,
+  "source_factory_scope": "Same distillation pilot apparatus",
+  "files_sha256": {
+    "docs/experiments/arx-disturbance-20261003/protocol.json": "7644ab84caaa87b5e433833880ea4921fc0f37b90e2c3e7d1510143e2a7a4ce1",
+    "docs/experiments/arx-disturbance-20261003/development.json": "2a0fb17e97f91e95c8ec2080491d8f0f2d38d72f05ea58ddcc5a8911830d17cb",
+    "docs/experiments/arx-disturbance-20261003/freeze-seal.json": "2a80d01ff17e5db3dbef8198ef38c8862b518e8a72b4459c0f5c381fc3721adb",
+    "docs/experiments/arx-disturbance-20261003/test-results.json": "dfc86ac0ce9710c520e5fa02ce615a5f9f2becff77c23682b5ec7ab1357d94f1",
+    "docs/experiments/arx-disturbance-20261003/script-repair.json": "dba10f0c6e1214dd36acb7c5bca4532773fe83a5cef4656160e7a12aa6f04441",
+    "docs/experiments/arx-disturbance-20261003/report.md": "9c009b62a678e7fbd2ccb45a5d77334109738e9a47bde8a4ae047f44c943c6c1",
+    "docs/experiments/arx-disturbance-20261003/api-replay/api-integration.json": "754132130acb77daee10ca4e1b646f0d3eb651e5fefe0615ba2ddca26a0b02da"
+  },
+  "ui_sha256": {
+    "frontend/src/views/OptunaView.vue": "f4357b4426fa9128ca428ceb99792622830676fd5227ee72347ae583407d6b1f",
+    "frontend/src/views/ARXModelingView.vue": "9a06e6ade91559cb2b94339e87f5db09d2a607f7022f34b82ec8c379fbafe0df",
+    "frontend/src/types/api.ts": "89b1876c6448842309c2cceb85b411276d40c4374a6f057edc8efaddfb633b40",
+    "frontend/src/components/artifact/ArxModelArtifactRenderer.vue": "5b9f1d5fb3ee76b58bea587854343f471b9fd7b0c1e43b7604cd7570eb57046b"
+  },
+  "helper_scripts_sha256": {
+    "backend/scripts/smoke_policy_validation_api.py": "9d689bbafc214b7725828fff560d37117ded1d9f1bbf117f79ce2b3750fae247",
+    "backend/scripts/refresh_policy_reports.py": "64acae3ce2f153aab86f0045d77445f5755fa6d070403b4ffcd60c04edba5102"
+  }
+}

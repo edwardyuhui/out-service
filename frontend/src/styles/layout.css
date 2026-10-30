@@ -1,0 +1,211 @@
+/**
+ * IndusOpt Spatial & Layout Tokens
+ * Global design tokens for spacing, widths, layout containers, and grid.
+ */
+
+:root {
+  /* ── SIDEBAR DIMENSIONS ──────────────────────────────────── */
+  --sidebar-width: 56px;
+  --sidebar-width-collapsed: 56px;
+  --sidebar-expanded-width: 224px;
+  --sidebar-width-expanded: 224px;
+
+  /* ── RESPONSIVE PAGE GUTTERS ─────────────────────────────── */
+  --page-gutter-lg: 48px;  /* >= 1440px */
+  --page-gutter-md: 32px;  /* 1280px ~ 1439px */
+  --page-gutter-sm: 20px;  /* < 1280px */
+  --page-gutter: var(--page-gutter-lg);
+
+  /* ── CONTENT WIDTH TIERS ─────────────────────────────────── */
+  --reading-max: 760px;            /* Long-form reports, docs, descriptions */
+  --agent-home-max: 920px;         /* Prompt-first Home central focus area */
+  --workspace-center-max: 760px;   /* Stream message reading width */
+  --composer-max: 860px;           /* Primary Agent input box */
+  --content-max: 1280px;           /* Standard datasets, models, optimization */
+  --content-wide: 1440px;          /* Multi-chart / wide dashboard */
+
+  /* ── SPACING SCALE (STRICT MULTIPLES) ───────────────────── */
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+  --space-11: 80px;
+  --space-12: 96px;
+
+  /* ── SECTION VERTICAL GAPS ──────────────────────────────── */
+  --section-gap-xs:  16px;
+  --section-gap-sm:  24px;
+  --section-gap-md:  32px;
+  --section-gap-lg:  48px;
+  --section-gap-xl:  64px;
+  --section-gap-2xl: 88px;
+
+  /* ── WORKSPACE PANE SPEC ─────────────────────────────────── */
+  --ws-left-width: 240px;
+  --ws-artifact-min: 480px;
+}
+
+@media (max-width: 1439px) {
+  :root {
+    --page-gutter: var(--page-gutter-md);
+  }
+}
+
+@media (max-width: 1279px) {
+  :root {
+    --page-gutter: var(--page-gutter-sm);
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   GLOBAL CONTAINER CLASSES
+───────────────────────────────────────────────────────────── */
+
+/* Standard Page Container (1280px max) */
+.page-container {
+  width: 100%;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: var(--space-6) var(--page-gutter) var(--space-12);
+  box-sizing: border-box;
+}
+
+/* Reading / Document Container (760px max) */
+.page-container--reading {
+  width: 100%;
+  max-width: var(--reading-max);
+  margin: 0 auto;
+  padding: var(--space-6) var(--page-gutter) var(--space-12);
+  box-sizing: border-box;
+}
+
+/* Focused Agent Home Container (920px max) */
+.page-container--focused {
+  width: min(var(--agent-home-max), calc(100vw - var(--page-gutter) * 2));
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Wide Container (1440px max) */
+.page-container--wide {
+  width: 100%;
+  max-width: var(--content-wide);
+  margin: 0 auto;
+  padding: var(--space-6) var(--page-gutter) var(--space-12);
+  box-sizing: border-box;
+}
+
+/* Full Width with Responsive Gutters */
+.page-container--full {
+  width: 100%;
+  padding-left: var(--page-gutter);
+  padding-right: var(--page-gutter);
+  box-sizing: border-box;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   STANDARDIZED PAGE HEADER
+───────────────────────────────────────────────────────────── */
+.page-header-unified {
+  margin-bottom: var(--section-gap-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.page-header-unified__main {
+  flex: 1;
+  min-width: 0;
+}
+
+.page-header-unified__eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: var(--space-2);
+}
+
+.page-header-unified__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0 0 var(--space-2) 0;
+}
+
+.page-header-unified__desc {
+  font-size: var(--font-size-md);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.page-header-unified__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   12-COLUMN RESPONSIVE GRID SYSTEM
+───────────────────────────────────────────────────────────── */
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--space-6);
+  width: 100%;
+}
+
+.col-12 { grid-column: span 12; }
+.col-11 { grid-column: span 11; }
+.col-10 { grid-column: span 10; }
+.col-9  { grid-column: span 9; }
+.col-8  { grid-column: span 8; }
+.col-7  { grid-column: span 7; }
+.col-6  { grid-column: span 6; }
+.col-5  { grid-column: span 5; }
+.col-4  { grid-column: span 4; }
+.col-3  { grid-column: span 3; }
+.col-2  { grid-column: span 2; }
+.col-1  { grid-column: span 1; }
+
+@media (max-width: 1024px) {
+  .grid-12 {
+    gap: var(--space-4);
+  }
+  .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-9, .col-10 {
+    grid-column: span 12;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   SECTION & CARD UTILITIES
+───────────────────────────────────────────────────────────── */
+.section-block {
+  margin-bottom: var(--section-gap-md);
+}
+
+.section-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

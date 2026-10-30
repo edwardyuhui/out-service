@@ -1,0 +1,391 @@
+/* ============================================================
+   IndusOpt — Industrial AI Agent Workspace
+   Application Base Styles & Theme Layer (WARM LIGHT DEFAULT)
+   ============================================================ */
+
+@import './design-tokens.css';
+@import '../styles/layout.css';
+
+@font-face {
+  font-family: 'IndusOpt Sans';
+  src: url('./fonts/noto-sans-sc/NotoSansSC-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IndusOpt Mono';
+  src: url('./fonts/jetbrains-mono/JetBrainsMono-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IndusOpt Mono';
+  src: url('./fonts/jetbrains-mono/JetBrainsMono-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IndusOpt Mono';
+  src: url('./fonts/jetbrains-mono/JetBrainsMono-SemiBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+/* ── Global Reset ─────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-primary);
+  background-color: var(--bg-app);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: normal;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ── Minimal Warm Light Scrollbars ─────────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.22);
+}
+
+/* ── Typography Utilities ─────────────────────────────────── */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.text-primary   { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-tertiary  { color: var(--text-tertiary); }
+.text-muted     { color: var(--text-muted); }
+.text-accent    { color: var(--accent-dark); }
+.text-success   { color: var(--success); }
+.text-warning   { color: var(--warning); }
+.text-error     { color: var(--danger); }
+
+/* Tabular numbers for industrial data */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-sans);
+  letter-spacing: normal;
+}
+
+/* ── Surface Utilities (Warm Light Hierarchy) ─────────────── */
+.surface,
+.surface-1 {
+  background: var(--surface-1);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.surface-2,
+.surface-elevated {
+  background: var(--surface-2);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+}
+
+.surface-3 {
+  background: var(--surface-3);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+}
+
+/* ── Section / Panel ──────────────────────────────────────── */
+.panel,
+.industrial-card {
+  padding: var(--space-5);
+  background: var(--surface-1);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.panel:hover,
+.industrial-card:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.panel + .panel,
+.industrial-card + .industrial-card {
+  margin-top: var(--space-4);
+}
+
+.panel-header,
+.industrial-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.panel-title,
+.industrial-card-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.panel-title {
+  text-transform: uppercase;
+  letter-spacing: normal;
+  font-family: var(--font-sans);
+}
+
+.industrial-card-title {
+  font-family: var(--font-sans);
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+/* ── Divider ──────────────────────────────────────────────── */
+.divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: var(--space-4) 0;
+}
+
+/* ── Label (Section Sub-label) ────────────────────────────── */
+.label {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: none;
+  letter-spacing: normal;
+  font-family: var(--font-sans);
+}
+
+/* ── Code / Inline Mono ───────────────────────────────────── */
+.code-inline {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-primary);
+  background: var(--surface-3);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xs);
+  padding: 1px 6px;
+}
+
+/* ── Page Header (Secondary Views) ────────────────────────── */
+.page-header {
+  margin-bottom: var(--space-5);
+}
+
+.page-eyebrow {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--accent-dark);
+  letter-spacing: normal;
+  text-transform: uppercase;
+  margin-bottom: var(--space-1);
+}
+
+.page-header h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.page-header .subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-top: var(--space-1);
+}
+
+/* ── Status Badges (Light-first Minimalist) ────────────────── */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  font-family: var(--font-sans);
+  letter-spacing: normal;
+  white-space: nowrap;
+}
+
+.status-badge.running {
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-border);
+}
+
+.status-badge.completed {
+  color: var(--success);
+  background: var(--success-soft);
+  border: 1px solid var(--color-success-border);
+}
+
+.status-badge.waiting {
+  color: var(--warning);
+  background: var(--warning-soft);
+  border: 1px solid var(--color-warning-border);
+}
+
+.status-badge.failed {
+  color: var(--danger);
+  background: var(--danger-soft);
+  border: 1px solid var(--color-error-border);
+}
+
+.status-badge.pending,
+.status-badge.cancelled {
+  color: var(--text-muted);
+  background: var(--surface-3);
+  border: 1px solid var(--border-default);
+}
+
+/* Status dot */
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.status-dot.running   { background: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+.status-dot.completed { background: var(--success); }
+.status-dot.waiting   { background: var(--warning); }
+.status-dot.failed    { background: var(--danger); }
+.status-dot.pending   { background: var(--text-disabled); }
+.status-dot.cancelled { background: var(--text-muted); }
+
+/* Agent working breathing indicator */
+.agent-working-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+  animation: agent-breathe 2s ease-in-out infinite;
+}
+
+@keyframes agent-breathe {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.85); }
+}
+
+/* ── Element Plus Overrides ───────────────────────────────── */
+.el-button--primary {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: #FFFFFF !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 8px rgba(80, 110, 75, 0.12) !important;
+}
+
+.el-button--primary:hover {
+  background: var(--accent-hover) !important;
+  border-color: var(--accent-hover) !important;
+  color: #FFFFFF !important;
+}
+
+.el-button--primary:active {
+  background: var(--accent-active) !important;
+  border-color: var(--accent-active) !important;
+}
+
+.el-button--default {
+  background: var(--surface-1) !important;
+  border-color: var(--border-default) !important;
+  color: var(--text-primary) !important;
+}
+
+.el-button--default:hover {
+  background: var(--surface-3) !important;
+  border-color: var(--border-strong) !important;
+  color: var(--text-primary) !important;
+}
+
+.el-input__wrapper {
+  background-color: var(--surface-1) !important;
+  border: 1px solid var(--border-default) !important;
+  box-shadow: none !important;
+  transition: border-color var(--transition-fast) !important;
+}
+
+.el-input__wrapper:hover {
+  border-color: var(--border-strong) !important;
+}
+
+.el-input__wrapper.is-focus {
+  border-color: var(--border-focus) !important;
+  box-shadow: 0 0 0 3px var(--accent-soft) !important;
+}
+
+.el-table {
+  background-color: transparent !important;
+  --el-table-tr-bg-color: transparent !important;
+}
+
+.el-table th.el-table__cell {
+  background-color: var(--surface-3) !important;
+  color: var(--text-secondary) !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+  font-size: var(--font-size-xs) !important;
+}
+
+.el-table td.el-table__cell {
+  border-bottom: 1px solid var(--border-subtle) !important;
+}

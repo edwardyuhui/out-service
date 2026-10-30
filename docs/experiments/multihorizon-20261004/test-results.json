@@ -1,0 +1,36 @@
+{
+  "seal_sha256": "804b60acdb41f2c08e4dc946ae9809748f56ae9c21d9a16471094ae86dda3d4d",
+  "selected_arm": "multihorizon24",
+  "n_samples": 974,
+  "persistence_rmse": 2.873608830468508,
+  "arms": {
+    "initial24": {
+      "rmse": 1.1505210054640067,
+      "fit": 45.72993934068334,
+      "n_samples": 974,
+      "future_output_invariance": true,
+      "refit": false
+    },
+    "affine24": {
+      "rmse": 0.76046558436939,
+      "fit": 64.12884841124213,
+      "n_samples": 974,
+      "future_output_invariance": true,
+      "refit": false
+    },
+    "single_horizon24": {
+      "rmse": 0.7164997933148425,
+      "fit": 66.20271419564202,
+      "n_samples": 974,
+      "future_output_invariance": true,
+      "refit": false
+    },
+    "multihorizon24": {
+      "rmse": 0.7193110639100725,
+      "fit": 66.07010659872869,
+      "n_samples": 974,
+      "future_output_invariance": true,
+      "refit": false
+    }
+  }
+}

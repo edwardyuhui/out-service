@@ -1,0 +1,26 @@
+{
+  "freeze_seal": {
+    "development_sha256": "363a03b0a0dc1b39930353da5fa6a443478bbe3de0176887fc64a09ab80273ca",
+    "source_development_sha256": "87e8bbbd31db7c7ca9df43e56e50a9692401f2f226c1fa01fd61c6c67ba5c0f6"
+  },
+  "results": [
+    {
+      "dataset": "boiler",
+      "seeds": [
+        {
+          "seed": 31,
+          "test": {
+            "state": "succeeded",
+            "free_run": {
+              "mae": 1.440264548251743,
+              "rmse": 1.8505245576592864,
+              "r2": 0.7554995419966795,
+              "fit": 50.553012427113366,
+              "nrmse": 0.14158746408339562
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

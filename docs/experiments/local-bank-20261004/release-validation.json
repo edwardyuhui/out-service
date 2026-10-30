@@ -1,0 +1,55 @@
+{
+  "validated_at": "2026-10-04T09:23:30.583526+00:00",
+  "backend_distinct_passed": 694,
+  "test_suites": {
+    "docs/experiments/local-bank-20261004/backend-final-tests.xml": {
+      "total": 694,
+      "passed": 691,
+      "skipped": 3,
+      "failures": 0,
+      "errors": 0
+    },
+    "docs/experiments/feedback-20261004/worker-tests.xml": {
+      "total": 3,
+      "passed": 3,
+      "skipped": 0,
+      "failures": 0,
+      "errors": 0
+    }
+  },
+  "worker_note": "Three Redis tests passed in prior isolated environment. Worker and formal app source files unchanged; numerical estimator changes confined to experimental modules/metadata.",
+  "formal_app_agent_and_frontend_source_unchanged": true,
+  "formal_default_changed": false,
+  "original_experiment_seals_unchanged": {
+    "operating-points-20261004": {
+      "protocol_sha256": true,
+      "development_sha256": true
+    },
+    "local-bank-20261004": {
+      "protocol_sha256": true,
+      "development_sha256": true
+    }
+  },
+  "frozen_source_file_hashes_verified": 12,
+  "diagnostics_repair_exact_parameter_comparisons": 226,
+  "ruff_changed_files": "passed",
+  "git_diff_check": "passed",
+  "new_tests": 14,
+  "first_stage_c_independent_result": "failed_to_beat_persistence",
+  "second_stage_role": "already_seen_development_regression; no independent confirmation",
+  "development_c_rmse_before": 2.7042982601643106,
+  "development_c_rmse_after": 1.33454972641989,
+  "development_c_reduction_percent": 50.65079373534766,
+  "c_fit_still_negative": true,
+  "b_not_improved": true,
+  "code_sha256": {
+    "backend/algorithms/identifiability/experiments.py": "2a54b69ba5286f758b99f080cd3d3d8b19fbf83718ee3e514ba3e8b95f81e54c",
+    "backend/algorithms/identifiability/operating_points.py": "5106bee17e798723cef2d2687d4eb3e773d72c7125b076c5c8a5dcd951fd29fd",
+    "backend/algorithms/identifiability/model_bank.py": "c85dc2c60e590857e93436de843586be1fe69d52f9e45ddebfc62d7934dda755",
+    "backend/scripts/benchmark_operating_points.py": "3e1c7aa98bd85e6b433ad554bfa47ec674c5e70301c452e8a7660ad91ae1bc75",
+    "backend/scripts/benchmark_local_model_bank.py": "75f1eadd50a9096f1941cc0f272c8fd7285dfc71570aaa110b118957266d560c",
+    "backend/tests/test_experiments.py": "9e3d85e5f0a03474d19b274593985a279d6ade12dcad3fe1fc224c6e7823469e",
+    "backend/tests/test_operating_points.py": "df9f668043cdae95fdd8f1694f77123168de0fa86c5c152c036c0a08fc9e9bec",
+    "backend/tests/test_model_bank.py": "498810d14ab656794daf38cf32e60abd08dd427e7ab5d3d805de9908e40475cb"
+  }
+}

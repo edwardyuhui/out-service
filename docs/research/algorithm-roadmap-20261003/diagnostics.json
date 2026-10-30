@@ -1,0 +1,781 @@
+{
+  "existing_results_sha256": "4d3c26b2231bca30f7e8e2818dcf729445690ce40faa388f23c708125eec98bd",
+  "script_sha256": "e0ed5ce6394d666d803e3f53a0dd39a30ad046321e5c15796c8d4e21dc207e4f",
+  "order_ceiling": {
+    "count": 144,
+    "na_at_4": 31,
+    "nb_at_3": 91,
+    "either": 105
+  },
+  "independent_noise_diagnostic": {
+    "seed": 20261003,
+    "repetitions": 500,
+    "n": 200,
+    "channels": 3,
+    "lags": 20,
+    "false_triggers": 480,
+    "fraction": 0.96
+  },
+  "future_sensitive_clipping": {
+    "stable_pole": 0.5,
+    "evaluation_range": [
+      80,
+      120
+    ],
+    "modified_output_start": 160,
+    "first_prediction_before": 1000.0,
+    "first_prediction_after": 1000000.0,
+    "equal": false
+  },
+  "retrospective_validation_strategy_choice": {
+    "comparisons": 24,
+    "wins_vs_full": 16,
+    "ties": 4,
+    "median_rmse_ratio": 0.9707786958331723,
+    "independent_confirmation": false
+  },
+  "partition_diagnostics": [
+    {
+      "dataset": "dryer2",
+      "output": "dry_bulb_temperature",
+      "validation_mean_shift_train_std": 2.5580130841223405,
+      "test_mean_shift_train_std": 2.374670205746861
+    },
+    {
+      "dataset": "dryer2",
+      "output": "wet_bulb_temperature",
+      "validation_mean_shift_train_std": 1.9505556603667802,
+      "test_mean_shift_train_std": 1.8245202417018962
+    },
+    {
+      "dataset": "dryer2",
+      "output": "raw_material_moisture",
+      "validation_mean_shift_train_std": -0.9133558816556633,
+      "test_mean_shift_train_std": -1.1027006175080496
+    },
+    {
+      "dataset": "evaporator",
+      "output": "product_dry_matter",
+      "validation_mean_shift_train_std": -0.029177911724905532,
+      "test_mean_shift_train_std": -0.3445775718793433
+    },
+    {
+      "dataset": "evaporator",
+      "output": "product_flow",
+      "validation_mean_shift_train_std": -0.005901820970268031,
+      "test_mean_shift_train_std": 0.21626213482000534
+    },
+    {
+      "dataset": "evaporator",
+      "output": "product_temperature",
+      "validation_mean_shift_train_std": -0.013030782055932348,
+      "test_mean_shift_train_std": -0.612877158511211
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_1",
+      "validation_mean_shift_train_std": 0.12766705689141591,
+      "test_mean_shift_train_std": 0.12990928652308065
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_2",
+      "validation_mean_shift_train_std": 0.09029150055113774,
+      "test_mean_shift_train_std": 0.13640823417427267
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_3",
+      "validation_mean_shift_train_std": 0.1062428625721646,
+      "test_mean_shift_train_std": 0.15028835354228484
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_4",
+      "validation_mean_shift_train_std": 0.06549423311317087,
+      "test_mean_shift_train_std": 0.038641591443283475
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_5",
+      "validation_mean_shift_train_std": 0.0636572411660311,
+      "test_mean_shift_train_std": 0.15915203877498343
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_6",
+      "validation_mean_shift_train_std": -0.018816405311302565,
+      "test_mean_shift_train_std": 0.08214586340609467
+    }
+  ],
+  "validation_only_pilot": [
+    {
+      "dataset": "dryer2",
+      "output": "dry_bulb_temperature",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 1,
+          "nb": 1,
+          "estimator": "ols"
+        },
+        "validation_rmse": 2.052948442908143,
+        "validation_fit": -15.916523198859789,
+        "composite_score": -0.2520268850742434
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 1,
+          "nb": 2,
+          "estimator": "ols"
+        },
+        "validation_rmse": 2.0507702846174274,
+        "validation_fit": -15.7935368974216,
+        "composite_score": -0.2538297859522994
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 1,
+          "nb": 2,
+          "estimator": "ols"
+        },
+        "validation_rmse": 2.0507702846174274,
+        "validation_fit": -15.7935368974216,
+        "composite_score": -0.2538297859522994
+      },
+      "expanded_rmse_winner": {
+        "family": "expanded",
+        "configuration": {
+          "na": 2,
+          "nb": 12,
+          "estimator": "ridge",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 2.040090195052504,
+        "validation_fit": -15.190502342854506,
+        "composite_score": -0.32291172350489805
+      },
+      "candidate_count": 120,
+      "failures": {}
+    },
+    {
+      "dataset": "dryer2",
+      "output": "wet_bulb_temperature",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 1,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.4947287623452248,
+        "validation_fit": 7.1323724838566305,
+        "composite_score": -0.11649840629154877
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 1,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.4947287623452248,
+        "validation_fit": 7.1323724838566305,
+        "composite_score": -0.11649840629154877
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 1,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.4947287623452248,
+        "validation_fit": 7.1323724838566305,
+        "composite_score": -0.11649840629154877
+      },
+      "expanded_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 1,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.4947287623452248,
+        "validation_fit": 7.1323724838566305,
+        "composite_score": -0.11649840629154877
+      },
+      "candidate_count": 120,
+      "failures": {}
+    },
+    {
+      "dataset": "dryer2",
+      "output": "raw_material_moisture",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 2,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.8229026079834428,
+        "validation_fit": -38.02762014622143,
+        "composite_score": -0.3821051342596362
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 2,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.8229026079834428,
+        "validation_fit": -38.02762014622143,
+        "composite_score": -0.3821051342596362
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 2,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.8229026079834428,
+        "validation_fit": -38.02762014622143,
+        "composite_score": -0.3821051342596362
+      },
+      "expanded_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 2,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.8229026079834428,
+        "validation_fit": -38.02762014622143,
+        "composite_score": -0.3821051342596362
+      },
+      "candidate_count": 120,
+      "failures": {}
+    },
+    {
+      "dataset": "evaporator",
+      "output": "product_dry_matter",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "ols"
+        },
+        "validation_rmse": 0.6503170628384667,
+        "validation_fit": 38.413973573282334,
+        "composite_score": -0.03520567342214861
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.5893411489718048,
+        "validation_fit": 44.18848643381644,
+        "composite_score": -0.03650900216300562
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.5893411489718048,
+        "validation_fit": 44.18848643381644,
+        "composite_score": -0.03650900216300562
+      },
+      "expanded_rmse_winner": {
+        "family": "expanded",
+        "configuration": {
+          "na": 8,
+          "nb": 12,
+          "estimator": "ridge",
+          "ridge_alpha": 10.0
+        },
+        "validation_rmse": 0.4990964188851301,
+        "validation_fit": 52.734801223300074,
+        "composite_score": -0.016737689088951554
+      },
+      "candidate_count": 120,
+      "failures": {}
+    },
+    {
+      "dataset": "evaporator",
+      "output": "product_flow",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.5916731593497416,
+        "validation_fit": 36.56157187686312,
+        "composite_score": 0.007189246406900461
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.5741918550472745,
+        "validation_fit": 38.435894632537114,
+        "composite_score": -0.0008356276157606632
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.5741918550472745,
+        "validation_fit": 38.435894632537114,
+        "composite_score": -0.0008356276157606632
+      },
+      "expanded_rmse_winner": {
+        "family": "expanded",
+        "configuration": {
+          "na": 12,
+          "nb": 12,
+          "estimator": "ridge",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.41831520074666145,
+        "validation_fit": 55.148787170694824,
+        "composite_score": 0.03844373734915796
+      },
+      "candidate_count": 120,
+      "failures": {}
+    },
+    {
+      "dataset": "evaporator",
+      "output": "product_temperature",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 2,
+          "estimator": "ridge",
+          "ridge_alpha": 1.0
+        },
+        "validation_rmse": 0.5143559060298981,
+        "validation_fit": 38.1189633785083,
+        "composite_score": 0.0413460669380331
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 2,
+          "estimator": "ridge",
+          "ridge_alpha": 1.0
+        },
+        "validation_rmse": 0.5143559060298981,
+        "validation_fit": 38.1189633785083,
+        "composite_score": 0.0413460669380331
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "stronger_ridge",
+        "configuration": {
+          "na": 4,
+          "nb": 2,
+          "estimator": "ridge",
+          "ridge_alpha": 10.0
+        },
+        "validation_rmse": 0.49935660452697045,
+        "validation_fit": 39.92349661068919,
+        "composite_score": 0.05238811863936168
+      },
+      "expanded_rmse_winner": {
+        "family": "expanded",
+        "configuration": {
+          "na": 2,
+          "nb": 8,
+          "estimator": "ridge",
+          "ridge_alpha": 10.0
+        },
+        "validation_rmse": 0.4403058997844376,
+        "validation_fit": 47.02775803718316,
+        "composite_score": 0.055859538601128855
+      },
+      "candidate_count": 120,
+      "failures": {}
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_1",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.8561250998405118,
+        "validation_fit": 34.191764533599276,
+        "composite_score": -0.08641132519345543
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.8519999178643454,
+        "validation_fit": 34.50885714877886,
+        "composite_score": -0.08898326191548189
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.8519999178643454,
+        "validation_fit": 34.50885714877886,
+        "composite_score": -0.08898326191548189
+      },
+      "expanded_rmse_winner": {
+        "family": "expanded",
+        "configuration": {
+          "na": 12,
+          "nb": 12,
+          "estimator": "ridge",
+          "ridge_alpha": 10.0
+        },
+        "validation_rmse": 0.8309039470426376,
+        "validation_fit": 36.13045265565734,
+        "composite_score": -0.1390662698018415
+      },
+      "candidate_count": 120,
+      "failures": {}
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_2",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.7958597570211124,
+        "validation_fit": 32.99956746800795,
+        "composite_score": -0.056491568124725035
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.7958597570211124,
+        "validation_fit": 32.99956746800795,
+        "composite_score": -0.056491568124725035
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.7958597570211124,
+        "validation_fit": 32.99956746800795,
+        "composite_score": -0.056491568124725035
+      },
+      "expanded_rmse_winner": {
+        "family": "expanded",
+        "configuration": {
+          "na": 12,
+          "nb": 4,
+          "estimator": "ridge",
+          "ridge_alpha": 10.0
+        },
+        "validation_rmse": 0.7870703791674146,
+        "validation_fit": 33.73951205333172,
+        "composite_score": -0.08870164380848428
+      },
+      "candidate_count": 120,
+      "failures": {}
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_3",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.7938325490516305,
+        "validation_fit": 32.967142099268585,
+        "composite_score": -0.05508525577580845
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.7938325490516305,
+        "validation_fit": 32.967142099268585,
+        "composite_score": -0.05508525577580845
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.7938325490516305,
+        "validation_fit": 32.967142099268585,
+        "composite_score": -0.05508525577580845
+      },
+      "expanded_rmse_winner": {
+        "family": "expanded",
+        "configuration": {
+          "na": 12,
+          "nb": 4,
+          "estimator": "ridge",
+          "ridge_alpha": 10.0
+        },
+        "validation_rmse": 0.785237779313199,
+        "validation_fit": 33.692902184634285,
+        "composite_score": -0.08741447346313211
+      },
+      "candidate_count": 120,
+      "failures": {}
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_4",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.28387806418115075,
+        "validation_fit": 70.67758786165432,
+        "composite_score": 0.22361488064432058
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.28387806418115075,
+        "validation_fit": 70.67758786165432,
+        "composite_score": 0.22361488064432058
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.28387806418115075,
+        "validation_fit": 70.67758786165432,
+        "composite_score": 0.22361488064432058
+      },
+      "expanded_rmse_winner": {
+        "family": "expanded",
+        "configuration": {
+          "na": 12,
+          "nb": 8,
+          "estimator": "ridge",
+          "ridge_alpha": 10.0
+        },
+        "validation_rmse": 0.2417987886771889,
+        "validation_fit": 75.02405211689455,
+        "composite_score": 0.17911334188116496
+      },
+      "candidate_count": 120,
+      "failures": {}
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_5",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 1,
+          "nb": 3,
+          "estimator": "ols"
+        },
+        "validation_rmse": 0.6439433914053118,
+        "validation_fit": 42.05360362757457,
+        "composite_score": 0.021275234552997672
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 1,
+          "nb": 3,
+          "estimator": "ols"
+        },
+        "validation_rmse": 0.6439433914053118,
+        "validation_fit": 42.05360362757457,
+        "composite_score": 0.021275234552997672
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "stronger_ridge",
+        "configuration": {
+          "na": 2,
+          "nb": 3,
+          "estimator": "ridge",
+          "ridge_alpha": 10.0
+        },
+        "validation_rmse": 0.6167435908261263,
+        "validation_fit": 44.501226270572324,
+        "composite_score": 0.035617140613207164
+      },
+      "expanded_rmse_winner": {
+        "family": "expanded",
+        "configuration": {
+          "na": 4,
+          "nb": 12,
+          "estimator": "ridge",
+          "ridge_alpha": 10.0
+        },
+        "validation_rmse": 0.5250243945205669,
+        "validation_fit": 52.75474199108229,
+        "composite_score": 0.01990895728844551
+      },
+      "candidate_count": 120,
+      "failures": {
+        "not_eligible": 2
+      }
+    },
+    {
+      "dataset": "glassfurnace",
+      "output": "temperature_sensor_6",
+      "training": "full",
+      "test_hidden": true,
+      "existing_composite_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 1,
+          "nb": 3,
+          "estimator": "ridge",
+          "ridge_alpha": 1.0
+        },
+        "validation_rmse": 0.5010108995782091,
+        "validation_fit": 48.17207034164446,
+        "composite_score": 0.08112186692944945
+      },
+      "existing_rmse_winner": {
+        "family": "existing",
+        "configuration": {
+          "na": 4,
+          "nb": 3,
+          "estimator": "huber",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.49035853766285703,
+        "validation_fit": 49.27402214450745,
+        "composite_score": 0.08093331330981167
+      },
+      "low_order_stronger_ridge_winner": {
+        "family": "stronger_ridge",
+        "configuration": {
+          "na": 1,
+          "nb": 3,
+          "estimator": "ridge",
+          "ridge_alpha": 10.0
+        },
+        "validation_rmse": 0.47253958534353063,
+        "validation_fit": 51.11733415262769,
+        "composite_score": 0.10066368207424728
+      },
+      "expanded_rmse_winner": {
+        "family": "expanded",
+        "configuration": {
+          "na": 8,
+          "nb": 12,
+          "estimator": "ridge",
+          "ridge_alpha": 0.1
+        },
+        "validation_rmse": 0.45559153189648793,
+        "validation_fit": 52.87055453693243,
+        "composite_score": 0.037296293227927685
+      },
+      "candidate_count": 120,
+      "failures": {}
+    }
+  ]
+}

@@ -1,0 +1,594 @@
+{
+  "freeze_seal_sha256": "c2f7e9d709360b9553580b9bbed60472376e43dac92a87cf56f342a09c2c7c12",
+  "source_results": [
+    {
+      "dataset": "boiler",
+      "policies": {
+        "established": {
+          "seeds": [
+            {
+              "seed": 42,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.4920747760097561,
+                "rmse": 1.9416657951954137,
+                "r2": 0.7308223908228134,
+                "fit": 48.117670717556784,
+                "nrmse": 0.14856086880950495
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 20261003,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.8863664585200222,
+                "rmse": 2.2864666219325955,
+                "r2": 0.6267329081908865,
+                "fit": 38.90441163151684,
+                "nrmse": 0.17494229372467993
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 7,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.9753585256483022,
+                "rmse": 2.4678775464231113,
+                "r2": 0.5651522927309841,
+                "fit": 34.05701650144909,
+                "nrmse": 0.18882241903797267
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 19,
+              "status": "succeeded",
+              "test": {
+                "mae": 2.6131644231876567,
+                "rmse": 3.2311901315777685,
+                "r2": 0.25455604228052575,
+                "fit": 13.660903541936797,
+                "nrmse": 0.24722504481652094
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 31,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.7108121053125565,
+                "rmse": 2.0794249027841523,
+                "r2": 0.6912716920408164,
+                "fit": 44.43667504916724,
+                "nrmse": 0.15910110326202842
+              },
+              "coefficient_refit": false
+            }
+          ],
+          "chosen_seed_by_validation": 31
+        },
+        "validation_guarded": {
+          "seeds": [
+            {
+              "seed": 42,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.5030365581847802,
+                "rmse": 1.9300758675499525,
+                "r2": 0.73402627691987,
+                "fit": 48.42735966812152,
+                "nrmse": 0.14767409945676177
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 20261003,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.5101900585329493,
+                "rmse": 1.9346577702595193,
+                "r2": 0.7327619615958655,
+                "fit": 48.304928822552675,
+                "nrmse": 0.14802467031659677
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 7,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.4863252525434276,
+                "rmse": 1.9137975483216827,
+                "r2": 0.7384938185658029,
+                "fit": 48.86232490284711,
+                "nrmse": 0.1464286115600834
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 19,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.4863252525434276,
+                "rmse": 1.9137975483216827,
+                "r2": 0.7384938185658029,
+                "fit": 48.86232490284711,
+                "nrmse": 0.1464286115600834
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 31,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.440264548251743,
+                "rmse": 1.8505245576592864,
+                "r2": 0.7554995419966795,
+                "fit": 50.553012427113366,
+                "nrmse": 0.14158746408339562
+              },
+              "coefficient_refit": false
+            }
+          ],
+          "chosen_seed_by_validation": 31
+        }
+      }
+    },
+    {
+      "dataset": "exchanger",
+      "policies": {
+        "established": {
+          "seeds": [
+            {
+              "seed": 42,
+              "status": "succeeded",
+              "test": {
+                "mae": 0.6294067977991832,
+                "rmse": 0.7918118545080871,
+                "r2": 0.37894711306434636,
+                "fit": 21.193091233340866,
+                "nrmse": 0.23996043788278104
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 20261003,
+              "status": "succeeded",
+              "test": {
+                "mae": 0.7269406351120274,
+                "rmse": 0.9487083771484858,
+                "r2": 0.10844106470258141,
+                "fit": 5.577601423315959,
+                "nrmse": 0.28750829670899825
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 7,
+              "status": "succeeded",
+              "test": {
+                "mae": 0.8904761766945086,
+                "rmse": 1.1018803030683098,
+                "r2": -0.20268924026908386,
+                "fit": -9.667189271408038,
+                "nrmse": 0.33392740777156754
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 19,
+              "status": "succeeded",
+              "test": {
+                "mae": 0.8179287932457879,
+                "rmse": 1.0009851721562422,
+                "r2": 0.007478611458839657,
+                "fit": 0.37463231981724743,
+                "nrmse": 0.30335090193112235
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 31,
+              "status": "succeeded",
+              "test": {
+                "mae": 0.910322289953174,
+                "rmse": 1.1293873064621853,
+                "r2": -0.26348587325931105,
+                "fit": -12.404887494241578,
+                "nrmse": 0.3422634696045116
+              },
+              "coefficient_refit": false
+            }
+          ],
+          "chosen_seed_by_validation": 42
+        },
+        "validation_guarded": {
+          "seeds": [
+            {
+              "seed": 42,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 20261003,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 7,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 19,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 31,
+              "status": "no_validation_accepted_model"
+            }
+          ],
+          "chosen_seed_by_validation": null
+        }
+      }
+    },
+    {
+      "dataset": "distillation_a",
+      "policies": {
+        "established": {
+          "seeds": [
+            {
+              "seed": 42,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.4042182078504497,
+                "rmse": 1.9255977871865142,
+                "r2": -0.24080996108234376,
+                "fit": -11.3916496458484,
+                "nrmse": 0.3438567477118779
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 20261003,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.4776702150260028,
+                "rmse": 2.0185455618786654,
+                "r2": -0.3634877111581305,
+                "fit": -16.76847653190181,
+                "nrmse": 0.36045456462119063
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 7,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.3772944901207371,
+                "rmse": 1.8804718295744582,
+                "r2": -0.18333518688609352,
+                "fit": -8.78121101027023,
+                "nrmse": 0.3357985409954393
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 19,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.4407926203519026,
+                "rmse": 1.9750407867940862,
+                "r2": -0.3053478324041625,
+                "fit": -14.25181978437642,
+                "nrmse": 0.35268585478465864
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 31,
+              "status": "succeeded",
+              "test": {
+                "mae": 1.4879338804170021,
+                "rmse": 2.018984837115806,
+                "r2": -0.36408121924655834,
+                "fit": -16.79388765027725,
+                "nrmse": 0.3605330066278229
+              },
+              "coefficient_refit": false
+            }
+          ],
+          "chosen_seed_by_validation": 7
+        },
+        "validation_guarded": {
+          "seeds": [
+            {
+              "seed": 42,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 20261003,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 7,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 19,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 31,
+              "status": "no_validation_accepted_model"
+            }
+          ],
+          "chosen_seed_by_validation": null
+        }
+      }
+    },
+    {
+      "dataset": "distillation_b",
+      "policies": {
+        "established": {
+          "seeds": [
+            {
+              "seed": 42,
+              "status": "succeeded",
+              "test": {
+                "mae": 3.160783384908075,
+                "rmse": 3.3951849573594477,
+                "r2": -12.218999840308753,
+                "fit": -263.5794251646915,
+                "nrmse": 1.35455214736064
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 20261003,
+              "status": "succeeded",
+              "test": {
+                "mae": 5.225258882172139,
+                "rmse": 5.5429056935361185,
+                "r2": -34.23276283744288,
+                "fit": -493.571923505845,
+                "nrmse": 2.211412604642375
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 7,
+              "status": "succeeded",
+              "test": {
+                "mae": 6.227657051007228,
+                "rmse": 6.292420825521481,
+                "r2": -44.40537226916594,
+                "fit": -573.8350856787285,
+                "nrmse": 2.5104411831324454
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 19,
+              "status": "succeeded",
+              "test": {
+                "mae": 6.408050928866795,
+                "rmse": 6.4845392649591265,
+                "r2": -47.2203068723565,
+                "fit": -594.4084307693599,
+                "nrmse": 2.5870892738715816
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 31,
+              "status": "succeeded",
+              "test": {
+                "mae": 3.1391639123563677,
+                "rmse": 3.2710152308679,
+                "r2": -11.26978220721122,
+                "fit": -250.28248896014227,
+                "nrmse": 1.3050130583953308
+              },
+              "coefficient_refit": false
+            }
+          ],
+          "chosen_seed_by_validation": 42
+        },
+        "validation_guarded": {
+          "seeds": [
+            {
+              "seed": 42,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 20261003,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 7,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 19,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 31,
+              "status": "no_validation_accepted_model"
+            }
+          ],
+          "chosen_seed_by_validation": null
+        }
+      }
+    },
+    {
+      "dataset": "distillation_c",
+      "policies": {
+        "established": {
+          "seeds": [
+            {
+              "seed": 42,
+              "status": "succeeded",
+              "test": {
+                "mae": 0.48412566764145926,
+                "rmse": 0.5455767715028759,
+                "r2": 0.3619423028240464,
+                "fit": 20.12148616956162,
+                "nrmse": 0.25955127093381475
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 20261003,
+              "status": "succeeded",
+              "test": {
+                "mae": 0.6634846720690943,
+                "rmse": 0.7232743745803416,
+                "r2": -0.12138402768876477,
+                "fit": -5.895421416072777,
+                "nrmse": 0.34408866535696725
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 7,
+              "status": "succeeded",
+              "test": {
+                "mae": 0.6222739302931974,
+                "rmse": 0.6996505473444059,
+                "r2": -0.049326318208785525,
+                "fit": -2.436630079712465,
+                "nrmse": 0.33284992737602725
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 19,
+              "status": "succeeded",
+              "test": {
+                "mae": 0.5989040244490872,
+                "rmse": 0.6769916126324895,
+                "r2": 0.017540208196381246,
+                "fit": 0.8808902479638503,
+                "nrmse": 0.32207022484895
+              },
+              "coefficient_refit": false
+            },
+            {
+              "seed": 31,
+              "status": "succeeded",
+              "test": {
+                "mae": 0.6903398423923961,
+                "rmse": 0.7568847762205233,
+                "r2": -0.22802652970814186,
+                "fit": -10.816358436295047,
+                "nrmse": 0.36007839020957516
+              },
+              "coefficient_refit": false
+            }
+          ],
+          "chosen_seed_by_validation": 31
+        },
+        "validation_guarded": {
+          "seeds": [
+            {
+              "seed": 42,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 20261003,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 7,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 19,
+              "status": "no_validation_accepted_model"
+            },
+            {
+              "seed": 31,
+              "status": "no_validation_accepted_model"
+            }
+          ],
+          "chosen_seed_by_validation": null
+        }
+      }
+    }
+  ],
+  "transfers": [
+    {
+      "source": "distillation_a",
+      "member": "ContinuousDistillationData/ScenarioA_SingleComponent_Water/operating_point_005/test_anormal_experiment_001.csv",
+      "rows": 2029,
+      "role": "previously_unscored_anomalous_stress",
+      "time_audit": {
+        "first_break_row": null,
+        "original_rows": 2029,
+        "retained_rows": 2029
+      },
+      "policies": {
+        "established": {
+          "status": "succeeded",
+          "rmse": 3.9714653208782775,
+          "fit": -91.34411748113462,
+          "n_samples": 1986,
+          "future_output_invariance": true,
+          "persistence_rmse": 3.9549318135142073
+        },
+        "validation_guarded": {
+          "status": "no_source_validation_accepted_model"
+        }
+      }
+    },
+    {
+      "source": "distillation_b",
+      "member": "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_005/test_anormal_experiment_001.csv",
+      "rows": 312,
+      "role": "previously_unscored_anomalous_stress",
+      "time_audit": {
+        "first_break_row": null,
+        "original_rows": 312,
+        "retained_rows": 312
+      },
+      "policies": {
+        "established": {
+          "status": "succeeded",
+          "rmse": 0.22932780027679991,
+          "fit": -15.75013539604253,
+          "n_samples": 269,
+          "future_output_invariance": true,
+          "persistence_rmse": 0.20393207193285057
+        },
+        "validation_guarded": {
+          "status": "no_source_validation_accepted_model"
+        }
+      }
+    },
+    {
+      "source": "distillation_c",
+      "member": "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_005/test_anormal_experiment_001.csv",
+      "rows": 204,
+      "role": "previously_unscored_anomalous_stress",
+      "time_audit": {
+        "first_break_row": null,
+        "original_rows": 204,
+        "retained_rows": 204
+      },
+      "policies": {
+        "established": {
+          "status": "succeeded",
+          "rmse": 1.6174333221820254,
+          "fit": -45.52012653180171,
+          "n_samples": 161,
+          "future_output_invariance": true,
+          "persistence_rmse": 2.6013924842558622
+        },
+        "validation_guarded": {
+          "status": "no_source_validation_accepted_model"
+        }
+      }
+    }
+  ]
+}

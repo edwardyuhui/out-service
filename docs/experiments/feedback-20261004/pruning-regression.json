@@ -1,0 +1,532 @@
+{
+  "role": "previously_seen_boiler_regression",
+  "old_and_new_model_identical_by_offline_replay": true,
+  "test_rmse": 1.8505245576592864,
+  "before": {
+    "successful_structure_evaluations": 1080,
+    "completed_trials": 1,
+    "quality_rejections": {
+      "count": 283,
+      "reason_counts": {
+        "NONPOSITIVE_FREE_RUN_FIT": 283,
+        "NOT_BETTER_THAN_PERSISTENCE": 234
+      },
+      "examples": [
+        {
+          "parameters": {
+            "window_size": 80,
+            "max_segments": 20,
+            "max_anomaly_ratio": 0.24,
+            "max_missing_ratio": 0.4,
+            "min_input_activity_ratio": 0.08,
+            "nk": 2,
+            "selection_mode": "single",
+            "adaptive_windows": true,
+            "temporal_coverage_bins": 3,
+            "history_guard": 43,
+            "delays": {
+              "desuperheater_valve": 4,
+              "primary_air_flow": 12,
+              "secondary_air_flow": 13,
+              "steam_flow": 4
+            },
+            "na": 3,
+            "nb": 1,
+            "estimator": "ridge",
+            "ridge_alpha": 0.1,
+            "training_policy": "full_train"
+          },
+          "acceptance": {
+            "policy_version": "validation_quality_v1",
+            "partition": "validation",
+            "status": "insufficient",
+            "reasons": [
+              "NONPOSITIVE_FREE_RUN_FIT"
+            ],
+            "folds_checked": 3,
+            "folds_overlap": true,
+            "independent_test": false,
+            "deployment_ready": false
+          },
+          "folds": [
+            {
+              "train_end": 2880,
+              "validation_start": 2923,
+              "validation_stop": 4277,
+              "training_rows": 2824,
+              "validation_samples": 1354,
+              "free_run_fit": 9.998366087813581,
+              "free_run_rmse": 3.9048548848913347,
+              "training_output_scale": 4.399226046715816,
+              "persistence_rmse": 5.860250626257569,
+              "skill_vs_persistence": 0.33367100932592286,
+              "normalized_error": 0.8876231508509214,
+              "selected_indices_hash": "4406e455b246c9d912359ede0526ee309577242343a7172c356e791e2753976a"
+            },
+            {
+              "train_end": 3600,
+              "validation_start": 3643,
+              "validation_stop": 4997,
+              "training_rows": 3544,
+              "validation_samples": 1354,
+              "free_run_fit": -0.4655202591997698,
+              "free_run_rmse": 4.388991593359982,
+              "training_output_scale": 4.556268960735804,
+              "persistence_rmse": 4.642972847949217,
+              "skill_vs_persistence": 0.05470229159350293,
+              "normalized_error": 0.9632863272960059,
+              "selected_indices_hash": "a09e27a2cbfb21426c2aefdcab8a223e957e8a12fb700ad20574c3a7df4e652b"
+            },
+            {
+              "train_end": 4320,
+              "validation_start": 4363,
+              "validation_stop": 5717,
+              "training_rows": 4264,
+              "validation_samples": 1354,
+              "free_run_fit": 25.835798487132124,
+              "free_run_rmse": 2.979846807116846,
+              "training_output_scale": 4.475379320663987,
+              "persistence_rmse": 4.865987918415434,
+              "skill_vs_persistence": 0.38761730257497085,
+              "normalized_error": 0.6658311158918129,
+              "selected_indices_hash": "f13476c425be625c08c6beede91d959aa037f844d13af6c73ba95b8f73655afa"
+            }
+          ]
+        },
+        {
+          "parameters": {
+            "window_size": 80,
+            "max_segments": 20,
+            "max_anomaly_ratio": 0.24,
+            "max_missing_ratio": 0.4,
+            "min_input_activity_ratio": 0.08,
+            "nk": 2,
+            "selection_mode": "single",
+            "adaptive_windows": true,
+            "temporal_coverage_bins": 3,
+            "history_guard": 43,
+            "delays": {
+              "desuperheater_valve": 4,
+              "primary_air_flow": 12,
+              "secondary_air_flow": 13,
+              "steam_flow": 4
+            },
+            "na": 3,
+            "nb": 2,
+            "estimator": "huber",
+            "ridge_alpha": 0.1,
+            "training_policy": "full_train"
+          },
+          "acceptance": {
+            "policy_version": "validation_quality_v1",
+            "partition": "validation",
+            "status": "insufficient",
+            "reasons": [
+              "NONPOSITIVE_FREE_RUN_FIT"
+            ],
+            "folds_checked": 3,
+            "folds_overlap": true,
+            "independent_test": false,
+            "deployment_ready": false
+          },
+          "folds": [
+            {
+              "train_end": 2880,
+              "validation_start": 2923,
+              "validation_stop": 4277,
+              "training_rows": 2823,
+              "validation_samples": 1354,
+              "free_run_fit": 9.287640766687144,
+              "free_run_rmse": 3.935690761101364,
+              "training_output_scale": 4.399226046715816,
+              "persistence_rmse": 5.860250626257569,
+              "skill_vs_persistence": 0.3284091394543741,
+              "normalized_error": 0.8946325374754275,
+              "selected_indices_hash": "fa388571a87c917279e06a7e47f88128a9dddfc3a633b335bca84e2810efdac8"
+            },
+            {
+              "train_end": 3600,
+              "validation_start": 3643,
+              "validation_stop": 4997,
+              "training_rows": 3543,
+              "validation_samples": 1354,
+              "free_run_fit": -1.21194657494339,
+              "free_run_rmse": 4.421600381095409,
+              "training_output_scale": 4.556268960735804,
+              "persistence_rmse": 4.642972847949217,
+              "skill_vs_persistence": 0.047679035416196114,
+              "normalized_error": 0.9704432330924891,
+              "selected_indices_hash": "9d87767324473db7387a6f118d8d98e660144220fe72d4246d7000d48b12af3c"
+            },
+            {
+              "train_end": 4320,
+              "validation_start": 4363,
+              "validation_stop": 5717,
+              "training_rows": 4263,
+              "validation_samples": 1354,
+              "free_run_fit": 28.91316384501492,
+              "free_run_rmse": 2.8562012052097314,
+              "training_output_scale": 4.475379320663987,
+              "persistence_rmse": 4.865987918415434,
+              "skill_vs_persistence": 0.4130274770308455,
+              "normalized_error": 0.6382031556569763,
+              "selected_indices_hash": "737cd43f642273a78fc5efeb4b91f0ac36d36b683562d8941d9c90a57d3c9135"
+            }
+          ]
+        },
+        {
+          "parameters": {
+            "window_size": 80,
+            "max_segments": 20,
+            "max_anomaly_ratio": 0.24,
+            "max_missing_ratio": 0.4,
+            "min_input_activity_ratio": 0.08,
+            "nk": 2,
+            "selection_mode": "single",
+            "adaptive_windows": true,
+            "temporal_coverage_bins": 3,
+            "history_guard": 43,
+            "delays": {
+              "desuperheater_valve": 4,
+              "primary_air_flow": 12,
+              "secondary_air_flow": 13,
+              "steam_flow": 4
+            },
+            "na": 4,
+            "nb": 1,
+            "estimator": "ridge",
+            "ridge_alpha": 0.1,
+            "training_policy": "full_train"
+          },
+          "acceptance": {
+            "policy_version": "validation_quality_v1",
+            "partition": "validation",
+            "status": "insufficient",
+            "reasons": [
+              "NONPOSITIVE_FREE_RUN_FIT"
+            ],
+            "folds_checked": 3,
+            "folds_overlap": true,
+            "independent_test": false,
+            "deployment_ready": false
+          },
+          "folds": [
+            {
+              "train_end": 2880,
+              "validation_start": 2923,
+              "validation_stop": 4277,
+              "training_rows": 2824,
+              "validation_samples": 1354,
+              "free_run_fit": 6.916734093916088,
+              "free_run_rmse": 4.0385560769891224,
+              "training_output_scale": 4.399226046715816,
+              "persistence_rmse": 5.860250626257569,
+              "skill_vs_persistence": 0.3108560820088686,
+              "normalized_error": 0.9180151313215772,
+              "selected_indices_hash": "4406e455b246c9d912359ede0526ee309577242343a7172c356e791e2753976a"
+            },
+            {
+              "train_end": 3600,
+              "validation_start": 3643,
+              "validation_stop": 4997,
+              "training_rows": 3544,
+              "validation_samples": 1354,
+              "free_run_fit": -4.979956306413347,
+              "free_run_rmse": 4.586211712350679,
+              "training_output_scale": 4.556268960735804,
+              "persistence_rmse": 4.642972847949217,
+              "skill_vs_persistence": 0.012225170695023269,
+              "normalized_error": 1.0065717699883194,
+              "selected_indices_hash": "a09e27a2cbfb21426c2aefdcab8a223e957e8a12fb700ad20574c3a7df4e652b"
+            },
+            {
+              "train_end": 4320,
+              "validation_start": 4363,
+              "validation_stop": 5717,
+              "training_rows": 4264,
+              "validation_samples": 1354,
+              "free_run_fit": 25.65039831389416,
+              "free_run_rmse": 2.9872960090632343,
+              "training_output_scale": 4.475379320663987,
+              "persistence_rmse": 4.865987918415434,
+              "skill_vs_persistence": 0.38608643113194974,
+              "normalized_error": 0.6674956009360176,
+              "selected_indices_hash": "f13476c425be625c08c6beede91d959aa037f844d13af6c73ba95b8f73655afa"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "after": {
+    "successful_structure_evaluations": 704,
+    "completed_trials": 1,
+    "quality_rejections": {
+      "count": 283,
+      "reason_counts": {
+        "NONPOSITIVE_FREE_RUN_FIT": 283,
+        "NOT_BETTER_THAN_PERSISTENCE": 155
+      },
+      "examples": [
+        {
+          "parameters": {
+            "window_size": 80,
+            "max_segments": 20,
+            "max_anomaly_ratio": 0.24,
+            "max_missing_ratio": 0.4,
+            "min_input_activity_ratio": 0.08,
+            "nk": 2,
+            "selection_mode": "single",
+            "adaptive_windows": true,
+            "temporal_coverage_bins": 3,
+            "history_guard": 43,
+            "delays": {
+              "desuperheater_valve": 4,
+              "primary_air_flow": 12,
+              "secondary_air_flow": 13,
+              "steam_flow": 4
+            },
+            "na": 1,
+            "nb": 3,
+            "estimator": "ols",
+            "training_policy": "full_train"
+          },
+          "acceptance": {
+            "policy_version": "validation_quality_v2",
+            "partition": "validation",
+            "status": "insufficient",
+            "reasons": [
+              "NONPOSITIVE_FREE_RUN_FIT"
+            ],
+            "folds_checked": 1,
+            "folds_overlap": true,
+            "independent_test": false,
+            "deployment_ready": false
+          },
+          "folds": [
+            {
+              "train_end": 4320,
+              "validation_start": 4363,
+              "validation_stop": 5717,
+              "training_rows": 4262,
+              "validation_samples": 1354,
+              "free_run_fit": -2.4721911998000445,
+              "free_run_rmse": 4.1172348051507175,
+              "training_output_scale": 4.475379320663987,
+              "persistence_rmse": 4.865987918415434,
+              "skill_vs_persistence": 0.15387484018015019,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 4363,
+                "stop": 5717,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "primary_air_flow"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "desuperheater_valve": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "primary_air_flow": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0471976401179941
+                  },
+                  "secondary_air_flow": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "steam_flow": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              },
+              "normalized_error": 0.9199744893444844,
+              "selected_indices_hash": "150187669f5a9e2b461c2b3beacf47ba31cef9e74adc2d1633e1e801a1c4b8dc"
+            }
+          ],
+          "requested_folds": 3,
+          "unevaluated_folds": 2
+        },
+        {
+          "parameters": {
+            "window_size": 80,
+            "max_segments": 20,
+            "max_anomaly_ratio": 0.24,
+            "max_missing_ratio": 0.4,
+            "min_input_activity_ratio": 0.08,
+            "nk": 2,
+            "selection_mode": "single",
+            "adaptive_windows": true,
+            "temporal_coverage_bins": 3,
+            "history_guard": 43,
+            "delays": {
+              "desuperheater_valve": 4,
+              "primary_air_flow": 12,
+              "secondary_air_flow": 13,
+              "steam_flow": 4
+            },
+            "na": 1,
+            "nb": 3,
+            "estimator": "ridge",
+            "ridge_alpha": 0.01,
+            "training_policy": "full_train"
+          },
+          "acceptance": {
+            "policy_version": "validation_quality_v2",
+            "partition": "validation",
+            "status": "insufficient",
+            "reasons": [
+              "NONPOSITIVE_FREE_RUN_FIT"
+            ],
+            "folds_checked": 1,
+            "folds_overlap": true,
+            "independent_test": false,
+            "deployment_ready": false
+          },
+          "folds": [
+            {
+              "train_end": 4320,
+              "validation_start": 4363,
+              "validation_stop": 5717,
+              "training_rows": 4262,
+              "validation_samples": 1354,
+              "free_run_fit": -2.464191307248109,
+              "free_run_rmse": 4.116913377106028,
+              "training_output_scale": 4.475379320663987,
+              "persistence_rmse": 4.865987918415434,
+              "skill_vs_persistence": 0.15394089625141028,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 4363,
+                "stop": 5717,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "primary_air_flow"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "desuperheater_valve": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "primary_air_flow": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0471976401179941
+                  },
+                  "secondary_air_flow": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "steam_flow": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              },
+              "normalized_error": 0.9199026679363626,
+              "selected_indices_hash": "150187669f5a9e2b461c2b3beacf47ba31cef9e74adc2d1633e1e801a1c4b8dc"
+            }
+          ],
+          "requested_folds": 3,
+          "unevaluated_folds": 2
+        },
+        {
+          "parameters": {
+            "window_size": 80,
+            "max_segments": 20,
+            "max_anomaly_ratio": 0.24,
+            "max_missing_ratio": 0.4,
+            "min_input_activity_ratio": 0.08,
+            "nk": 2,
+            "selection_mode": "single",
+            "adaptive_windows": true,
+            "temporal_coverage_bins": 3,
+            "history_guard": 43,
+            "delays": {
+              "desuperheater_valve": 4,
+              "primary_air_flow": 12,
+              "secondary_air_flow": 13,
+              "steam_flow": 4
+            },
+            "na": 1,
+            "nb": 3,
+            "estimator": "ridge",
+            "ridge_alpha": 0.1,
+            "training_policy": "full_train"
+          },
+          "acceptance": {
+            "policy_version": "validation_quality_v2",
+            "partition": "validation",
+            "status": "insufficient",
+            "reasons": [
+              "NONPOSITIVE_FREE_RUN_FIT"
+            ],
+            "folds_checked": 1,
+            "folds_overlap": true,
+            "independent_test": false,
+            "deployment_ready": false
+          },
+          "folds": [
+            {
+              "train_end": 4320,
+              "validation_start": 4363,
+              "validation_stop": 5717,
+              "training_rows": 4262,
+              "validation_samples": 1354,
+              "free_run_fit": -2.3923115390324323,
+              "free_run_rmse": 4.114025316647687,
+              "training_output_scale": 4.475379320663987,
+              "persistence_rmse": 4.865987918415434,
+              "skill_vs_persistence": 0.15453441610940488,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 4363,
+                "stop": 5717,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "primary_air_flow"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "desuperheater_valve": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "primary_air_flow": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0471976401179941
+                  },
+                  "secondary_air_flow": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "steam_flow": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              },
+              "normalized_error": 0.9192573459979503,
+              "selected_indices_hash": "150187669f5a9e2b461c2b3beacf47ba31cef9e74adc2d1633e1e801a1c4b8dc"
+            }
+          ],
+          "requested_folds": 3,
+          "unevaluated_folds": 2
+        }
+      ],
+      "skipped_requested_fold_fits": 376
+    }
+  }
+}

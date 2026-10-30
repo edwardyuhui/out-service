@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="indus-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e6091" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="wave-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+  </defs>
+
+  <!-- Modern Industrial Base Badge -->
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#indus-grad)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Grid coordinate accents -->
+  <line x1="16" y1="32" x2="48" y2="32" stroke="#334155" stroke-width="1" stroke-dasharray="2,2" />
+
+  <!-- Dynamic Signal Waveform & Identification Arc -->
+  <path
+    d="M 16 38 C 22 38 24 20 30 20 C 36 20 38 42 44 42 L 48 30"
+    fill="none"
+    stroke="url(#wave-grad)"
+    stroke-width="4.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- High-Precision Identification Node Target -->
+  <circle cx="30" cy="20" r="3.5" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" />
+  <circle cx="44" cy="42" r="3.5" fill="#059669" stroke="#ffffff" stroke-width="1.5" />
+</svg>

@@ -1,0 +1,32 @@
+{
+  "completed_at": "2026-10-03T16:42:28.985121+00:00",
+  "backend_suite": {
+    "passed": 645,
+    "skipped": 3
+  },
+  "isolated_redis_worker_suite": {
+    "passed": 3,
+    "cleanup": "server terminated; temporary directory removed"
+  },
+  "distinct_tests_passed": 648,
+  "all_skipped_tests_covered_by_isolated_run": true,
+  "ruff_changed_files": "passed",
+  "git_diff_check": "passed",
+  "pip_check": "passed",
+  "default_optimization_algorithm_changed": false,
+  "oe_api_integration": false,
+  "numerical_code_and_original_snapshot_seal_verified": true,
+  "artifacts_sha256": {
+    "summary.json": "e27314eb0bf5bcf8501117098cb7161df5a4fb2cc5f7d2baa5bbb1c2e84bf4a7",
+    "transfer-results.json": "f872afc99bffbb74ec43f5c4414fafd6bad86ab96d006cadb16a99fb969a7812",
+    "test-results.json": "39a5c4520e447eacbede656ca03b75ae7fbc2a7f7ec0e9732eae6a2d9c2e21df",
+    "development.json": "c69c8b2ab5b5c9c4ae24fbe80ef61a7cddd97fcd1de36e87daddd13769d11c47",
+    "transfer-parser-repair.json": "9b80ccf6ad0927599de04aed8bf6a77e31317832ab849de025e65b5d4a21e0fd",
+    "baseline-reference-repair.json": "0ba7d7866cd5b7d14a41c2bf7dbd06ea9c0c11ba92f7f697f5e699d88d8994cf",
+    "freeze-seal.json": "b98c727e0dd27048c66faab763cc1f24ab6ed0a5e11d88edcb19fbdca59b5f08",
+    "backend-tests.xml": "837d168dd571fc14e43852a1e3bb20bfce9e81af0469737c9175176df28c6e5e",
+    "protocol.json": "6293d6e29ee510b50cc642ba667f1f145ca8cb2157e1f6f9bb5239d79c32bfcb",
+    "transfer-protocol.json": "49463a053ac68a7bd1984a6c99b7f93ca5a1cb5d50ab30db30bf4413f235b18c",
+    "worker-tests.xml": "de67015f9f7a59deff5fec9d81f41c398873b437b228f91e38df495d5ab2b96c"
+  }
+}

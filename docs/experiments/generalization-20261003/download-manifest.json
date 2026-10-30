@@ -1,0 +1,66 @@
+{
+  "download_date": "2026-10-03",
+  "local_directory": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003",
+  "files": [
+    {
+      "file": "ContinuousDistillationData.zip",
+      "url": "https://zenodo.org/records/17628963/files/ContinuousDistillationData.zip?download=1",
+      "bytes": 3563071,
+      "sha256": "8076e5cec0c1137ab0902c305a2603a4c4ec672308db563ff9749a9b9a7a34ec"
+    },
+    {
+      "file": "boiler-raw.zip",
+      "url": "https://ndownloader.figshare.com/files/53975393",
+      "bytes": 5516334,
+      "sha256": "1d71829dab7f57b19a7609909a6fee2c5ef4a58863372b609065d99ada398a20"
+    },
+    {
+      "file": "boiler-completion.py",
+      "url": "https://ndownloader.figshare.com/files/53974400",
+      "bytes": 1391,
+      "sha256": "61c5a1ef7cce458d642a4774eb18e84a7150751cbd11aea9314fff24b50d00a1"
+    },
+    {
+      "file": "exchanger.dat.gz",
+      "url": "https://ftp.esat.kuleuven.be/pub/SISTA/data/process_industry/exchanger.dat.gz",
+      "bytes": 45156,
+      "sha256": "9ceb12c4d6a18cae00ec2d0aed730de2bf86f9d1b9f4cc2187ca03bf9ffb1117"
+    },
+    {
+      "file": "powerplant.txt",
+      "url": "https://ftp.esat.kuleuven.be/pub/SISTA/data/process_industry/powerplant.txt",
+      "bytes": 1143,
+      "sha256": "1d67155e78e50571c20961dbce653f5bb41f3ba5fed44e1d49e00098bb78d673"
+    },
+    {
+      "file": "exchanger.txt",
+      "url": "https://ftp.esat.kuleuven.be/pub/SISTA/data/process_industry/exchanger.txt",
+      "bytes": 1649,
+      "sha256": "698df8b6f6e4519fb2273bafd96ada28cd32a9eb5dd1bca70650bff90925763d"
+    },
+    {
+      "file": "cstr.txt",
+      "url": "https://ftp.esat.kuleuven.be/pub/SISTA/data/process_industry/cstr.txt",
+      "bytes": 1188,
+      "sha256": "76999b193fb50827bc03affe0c6d0f360350fb4c9dce933e2213d8143b328bf1"
+    },
+    {
+      "file": "steamgen.txt",
+      "url": "https://ftp.esat.kuleuven.be/pub/SISTA/data/process_industry/steamgen.txt",
+      "bytes": 1723,
+      "sha256": "6ea028953815a0834797430cbfc8c584b489d75703cb82d309fdef6f1f4a29ef"
+    },
+    {
+      "file": "distill2.txt",
+      "url": "https://ftp.esat.kuleuven.be/pub/SISTA/data/process_industry/distill2.txt",
+      "bytes": 1461,
+      "sha256": "51c660d819ab7e6e96b59dd7ad4553bd0d40632e5acf3a93ec2c8af0f4bc6734"
+    },
+    {
+      "file": "boiler-paper.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12052967/fullTextXML",
+      "bytes": 79717,
+      "sha256": "24f737c55035743455912e58ee97a4570a9c18543a083a29a1e8e376f38a926a"
+    }
+  ]
+}

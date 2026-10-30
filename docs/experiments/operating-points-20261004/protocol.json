@@ -1,0 +1,138 @@
+{
+  "registered_at": "2026-10-04T08:53:05.711162+00:00",
+  "archive": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/ContinuousDistillationData.zip",
+  "archive_sha256": "8076e5cec0c1137ab0902c305a2603a4c4ec672308db563ff9749a9b9a7a34ec",
+  "cases": {
+    "distillation_b": {
+      "scenario": "ScenarioB_BinaryComponent_n-butanolwater",
+      "runs": [
+        "006",
+        "001"
+      ],
+      "target": "007",
+      "target_role": "previously_scored_normal_run_regression"
+    },
+    "distillation_c": {
+      "scenario": "ScenarioC_ReactiveOME",
+      "runs": [
+        "006",
+        "001",
+        "002"
+      ],
+      "target": "003",
+      "target_role": "previously_unscored_normal_independent_run"
+    }
+  },
+  "targets": [
+    {
+      "case": "distillation_b",
+      "member": "ContinuousDistillationData/ScenarioB_BinaryComponent_n-butanolwater/operating_point_007/train_normal_experiment_001.csv",
+      "role": "previously_scored_normal_run_regression",
+      "rows": 548,
+      "retained_rows": 548,
+      "time_audit": {
+        "first_break_row": null,
+        "original_rows": 548,
+        "retained_rows": 548
+      }
+    },
+    {
+      "case": "distillation_c",
+      "member": "ContinuousDistillationData/ScenarioC_ReactiveOME/operating_point_003/train_normal_experiment_001.csv",
+      "role": "previously_unscored_normal_independent_run",
+      "rows": 120,
+      "retained_rows": 120,
+      "time_audit": {
+        "first_break_row": null,
+        "original_rows": 120,
+        "retained_rows": 120
+      }
+    }
+  ],
+  "arms": {
+    "pooled": {
+      "method": "pooled",
+      "inputs": [
+        "M101",
+        "TH101_SetPoint",
+        "TV101",
+        "T116"
+      ]
+    },
+    "within_run": {
+      "method": "within",
+      "inputs": [
+        "M101",
+        "TH101_SetPoint",
+        "TV101",
+        "T116"
+      ]
+    },
+    "pooled_pressure": {
+      "method": "pooled",
+      "inputs": [
+        "M101",
+        "TH101_SetPoint",
+        "TV101",
+        "T116",
+        "PIC101"
+      ]
+    },
+    "within_run_pressure": {
+      "method": "within",
+      "inputs": [
+        "M101",
+        "TH101_SetPoint",
+        "TV101",
+        "T116",
+        "PIC101"
+      ]
+    }
+  },
+  "grid": {
+    "na": [
+      1,
+      2,
+      4
+    ],
+    "nb": [
+      1,
+      2,
+      3
+    ],
+    "alpha": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "initialization": [
+      "fixed",
+      "past_residual"
+    ]
+  },
+  "train_ratio": 0.6,
+  "validation_ratio": 0.2,
+  "guard": 10,
+  "forecast_start": 43,
+  "selection": "minimum mean RMSE/persistence across source temporal and leave-one-run-out Validation; fixed arm order breaks ties",
+  "leave_one_run_out": "held run Train never enters fit or scaling; score its same chronological Validation slice",
+  "source_test": "all tails after floor(N*.8) hidden during development",
+  "time_policy": "first contiguous 30-second block; no interpolation or concatenation; skip short targets explicitly",
+  "equal_fit_budget": "same 27 structures and two policies per arm; same source run partitions",
+  "offset_policy": "past_residual uses last32 preceding measurements; frozen over forecast; no dynamics refit",
+  "input_roles": "control/sensor columns only; T116 and PIC101 are known future sensor conditions, not assumed available open-loop control signals",
+  "labels": "label/status/alarm columns and anomaly YAML annotations are never numerical model features",
+  "scope": "one pilot apparatus, different operating conditions/material composition; C fresh normal run is short, B is regression; not factory transfer or deployment certification",
+  "code_sha256": {
+    "backend/scripts/benchmark_operating_points.py": "749512dc604a54853c1e78471623419b6227351a61e0fb47cdefb3a9b835aea8",
+    "backend/algorithms/identifiability/operating_points.py": "5106bee17e798723cef2d2687d4eb3e773d72c7125b076c5c8a5dcd951fd29fd",
+    "backend/algorithms/identifiability/experiments.py": "8d71f3256158df68f80ed59b9d2324fdb21847f01ef33c7b3657fa220543e342",
+    "backend/algorithms/identifiability/estimation.py": "93f99e695e518aafe60e97bc486d630911f3d8dc0aa70fd5aa54b11618963d76",
+    "backend/algorithms/identifiability/regressor.py": "2e42a2d99fd9e9a49bc634593e38385dc88681bd2f61c4965cf723b3c8100d5b",
+    "backend/algorithms/identifiability/validation.py": "1c36f784f6c0a85a23ce2cf24e425df4c23c2b290642becda6d76a06f2f83931",
+    "backend/algorithms/identifiability/support.py": "b0fd7ccbfe6d92e1da6a2e1cccf335b3f516af27f87831dd8fe9ef2e28fb7e5e",
+    "backend/scripts/benchmark_initial_and_oe.py": "3a667b2329dccca8e2289456e067d5328e21257c4c0ebc35031699bce16139c7",
+    "backend/scripts/benchmark_validation_guarded.py": "b752f00dfc187ff9412aaea5b890e5372f684bee2f52cf834c06e3ce297be496",
+    "backend/scripts/benchmark_oe_transfer.py": "af7f01d50c408da822f33c962b2f03d29c9ef1cc1a71e38996f3e52051cde25a"
+  }
+}

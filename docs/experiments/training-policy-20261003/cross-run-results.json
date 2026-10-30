@@ -1,0 +1,149 @@
+{
+  "protocol_sha256": "91b2eb905a73f8893ec0eb8c7dc114c64887836fe2d427c4aea6e8c22deca6a8",
+  "source_freeze_seal": {
+    "development_sha256": "963d7233afc2fc611de4b16c84c3e8f2a52824d3cfb3f157e0c73cb92b732d90",
+    "sealed_at": "2026-10-03T14:18:23.367456+00:00",
+    "datasets": 6
+  },
+  "chosen_seed_by_source_validation": 42,
+  "results": [
+    {
+      "kind": "same_operating_point_new_run",
+      "member": "ContinuousDistillationData/ScenarioA_SingleComponent_Water/operating_point_004/train_normal_experiment_002.csv",
+      "evidence_role": "regression_transfer",
+      "member_sha256": "3dc94b59c19fbbd5f7b4d1c173b11a7dbee7a7539ac739d3e7bd81b07c6f2eb9",
+      "rows": 11318,
+      "forecast_start": 43,
+      "models": {
+        "original_grid_full_train": {
+          "state": "succeeded",
+          "rmse": 3.6723183805149646,
+          "fit": -97.7938237158483,
+          "fit_status": "defined",
+          "output_range": 19.510000000000005,
+          "persistence_rmse": 2.593571789111915,
+          "persistence_skill": -0.4159308780006554,
+          "normalized_rmse_using_source_train": 2.0815285688746603,
+          "coefficient_refit": false,
+          "initialization_policy": "fixed"
+        },
+        "current_grid_full_train": {
+          "state": "succeeded",
+          "rmse": 3.1227319389540047,
+          "fit": -68.19268555868089,
+          "fit_status": "defined",
+          "output_range": 19.510000000000005,
+          "persistence_rmse": 2.593571789111915,
+          "persistence_skill": -0.20402757003432836,
+          "normalized_rmse_using_source_train": 1.7700142172745459,
+          "coefficient_refit": false,
+          "initialization_policy": "fixed"
+        },
+        "optimizer": {
+          "state": "succeeded",
+          "rmse": 2.7031655155059124,
+          "fit": -45.594523145283674,
+          "fit_status": "defined",
+          "output_range": 19.510000000000005,
+          "persistence_rmse": 2.593571789111915,
+          "persistence_skill": -0.04225590625795794,
+          "normalized_rmse_using_source_train": 1.5321972835409028,
+          "coefficient_refit": false,
+          "initialization_policy": "fixed"
+        }
+      }
+    },
+    {
+      "kind": "different_operating_point_new_run",
+      "member": "ContinuousDistillationData/ScenarioA_SingleComponent_Water/operating_point_006/train_normal_experiment_001.csv",
+      "evidence_role": "regression_transfer",
+      "member_sha256": "04e19442d5d2c278cba83650a74c508bc322f51cd6bc6af35db237ae67e67572",
+      "rows": 12666,
+      "forecast_start": 43,
+      "models": {
+        "original_grid_full_train": {
+          "state": "succeeded",
+          "rmse": 0.9645102858748609,
+          "fit": null,
+          "fit_status": "undefined_constant_output",
+          "output_range": 0.0,
+          "persistence_rmse": 0.0,
+          "persistence_skill": null,
+          "normalized_rmse_using_source_train": 0.5466997975106008,
+          "coefficient_refit": false,
+          "initialization_policy": "fixed"
+        },
+        "current_grid_full_train": {
+          "state": "succeeded",
+          "rmse": 1.118709560454985,
+          "fit": null,
+          "fit_status": "undefined_constant_output",
+          "output_range": 0.0,
+          "persistence_rmse": 0.0,
+          "persistence_skill": null,
+          "normalized_rmse_using_source_train": 0.6341024031891607,
+          "coefficient_refit": false,
+          "initialization_policy": "fixed"
+        },
+        "optimizer": {
+          "state": "succeeded",
+          "rmse": 2.020371170292955,
+          "fit": null,
+          "fit_status": "undefined_constant_output",
+          "output_range": 0.0,
+          "persistence_rmse": 0.0,
+          "persistence_skill": null,
+          "normalized_rmse_using_source_train": 1.1451785697583747,
+          "coefficient_refit": false,
+          "initialization_policy": "fixed"
+        }
+      }
+    },
+    {
+      "kind": "different_operating_point_op007",
+      "evidence_role": "new_operating_run_transfer",
+      "member": "ContinuousDistillationData/ScenarioA_SingleComponent_Water/operating_point_007/train_normal_experiment_001.csv",
+      "member_sha256": "c0826e8e741b8176d54fc6efa41e0cca5db88b25ccc4adec22c78eda737328aa",
+      "rows": 2638,
+      "forecast_start": 43,
+      "models": {
+        "original_grid_full_train": {
+          "state": "succeeded",
+          "rmse": 4.9309814198177175,
+          "fit": -223.65066847229414,
+          "fit_status": "defined",
+          "output_range": 6.660000000000011,
+          "persistence_rmse": 2.019330131780715,
+          "persistence_skill": -1.4418896852043743,
+          "normalized_rmse_using_source_train": 2.794958833743988,
+          "coefficient_refit": false,
+          "initialization_policy": "fixed"
+        },
+        "current_grid_full_train": {
+          "state": "succeeded",
+          "rmse": 5.883429589218561,
+          "fit": -286.16570563566495,
+          "fit_status": "defined",
+          "output_range": 6.660000000000011,
+          "persistence_rmse": 2.019330131780715,
+          "persistence_skill": -1.913555092663501,
+          "normalized_rmse_using_source_train": 3.3348216314522348,
+          "coefficient_refit": false,
+          "initialization_policy": "fixed"
+        },
+        "optimizer": {
+          "state": "succeeded",
+          "rmse": 4.01502112109491,
+          "fit": -163.53055490133735,
+          "fit_status": "defined",
+          "output_range": 6.660000000000011,
+          "persistence_rmse": 2.019330131780715,
+          "persistence_skill": -0.9882935721631243,
+          "normalized_rmse_using_source_train": 2.2757779424948112,
+          "coefficient_refit": false,
+          "initialization_policy": "fixed"
+        }
+      }
+    }
+  ]
+}

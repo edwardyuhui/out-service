@@ -1,0 +1,6 @@
+{
+  "sealed_at": "2026-10-04T20:23:45.744562+00:00",
+  "protocol_sha256": "0a2c7a9d4afe9752a20006ef902d4311dc3c4ee7ff911a2e99f5adafc11bc252",
+  "development_sha256": "c9ba8915ed3fbaeec5afd172ebabfdfca515d662441fb52ef0e0fc4e8d48c0b4",
+  "test_outputs_loaded_during_development": false
+}

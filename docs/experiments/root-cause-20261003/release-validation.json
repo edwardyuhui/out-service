@@ -1,0 +1,51 @@
+{
+  "verified_at": "2026-10-03T17:42:14.571605+00:00",
+  "backend": {
+    "backend-tests.xml": {
+      "passed": 653,
+      "skipped": 3
+    },
+    "worker-tests.xml": {
+      "passed": 3,
+      "skipped": 0
+    },
+    "experiment-support-tests.xml": {
+      "passed": 6,
+      "skipped": 0
+    }
+  },
+  "distinct_backend_tests_passed": 662,
+  "uncovered_skips": 0,
+  "frontend_related_tests_passed": 7,
+  "frontend_vue_typecheck": "passed",
+  "ruff_changed_files": "passed",
+  "git_diff_check": "passed",
+  "api": {
+    "status": "succeeded",
+    "model_matches_offline_frozen_parameters": true,
+    "evaluation_did_not_refit": true,
+    "model_artifact_unchanged": true,
+    "exported_rows": 3184,
+    "llm_provider": "deepseek",
+    "llm_model": "deepseek-flash",
+    "narration_source": "llm",
+    "test_rmse": 1.8505245576592864
+  },
+  "default_policy_changed": false,
+  "multi_experiment_integration": "offline experimental module; not promoted to default API model family",
+  "evidence_sha256": {
+    "coverage-selection-seal.json": "8ba8e47374361ab1d68ad6e6527c3543722d38111c3b3ed5d9f01b53395b17ec",
+    "test-results.json": "ff8ba46161033853390820bba8cbe71d321388fbb3e3e187035b722fb27d037a",
+    "coverage-protocol.json": "aa2505c5f411642d369eefbdcb8da17b9d6ac716943eabd3b09e09624a43cea8",
+    "affine-factor-ablation.json": "eae6e3f40ccba7c3cb60436d1f09be577a432918045d757bf6152e2d63c0bd9b",
+    "development.json": "87e8bbbd31db7c7ca9df43e56e50a9692401f2f226c1fa01fd61c6c67ba5c0f6",
+    "coverage-seal.json": "0486bf580d1ba92093a7c2f2b9ea636a7b69dd7e2d1be5960ae07d2c3e931cda",
+    "seen-control-coverage.json": "b4177f9681bcd018631854612be21cefc46b0ee314587087ed038b93edb38167",
+    "freeze-seal.json": "c2f7e9d709360b9553580b9bbed60472376e43dac92a87cf56f342a09c2c7c12",
+    "protocol.json": "fb5377d39f5637952ee89ae778170dadd88aa18f1305d537c6c462b049dfa2a4",
+    "frozen-model-diagnosis.json": "564149508976dddf18151dc77194e3d09f50cb4d77453eeb2df05de38ee40b59",
+    "coverage-transfer.json": "6037822883422e8cb2dbf1e1e3ab842804b0c631ed24ee59ab1927461b967a3d",
+    "coverage-development.json": "2be5c01a3b58c99f317f739d7e77935ad163e58765b04209664ed4537f8395ba",
+    "input-support-audit.json": "dbf53edbb5dc4bc277888b141b52b9b394bcd332dbcb534f68b9db7470f71f06"
+  }
+}

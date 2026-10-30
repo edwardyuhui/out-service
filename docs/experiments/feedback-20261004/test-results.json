@@ -1,0 +1,1672 @@
+{
+  "freeze_seal": {
+    "protocol_sha256": "af6753f0025e64a3880ee2efb545f38f6fd219e8842a03b1415c405b9e1497b0",
+    "development_sha256": "00e7dc42d7ce3ce05d291d70dcfe7c99ee91a1181aeb1ef3292c3a83cd004572",
+    "sealed_at": "2026-10-04T05:04:27.758019+00:00",
+    "all_models_frozen_before_any_test_score": true
+  },
+  "results": [
+    {
+      "dataset": "winding_tension_1",
+      "persistence_rmse": 1.1550569422321222,
+      "arms": {
+        "established": {
+          "chosen_seed_by_validation": 20261004,
+          "seeds": [
+            {
+              "seed": 42,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.36499296006629106,
+                "fit": 64.05571409262257,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.00211864406779661
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 7,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.35887600207094295,
+                "fit": 64.65810841559329,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 19,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.32253090657769234,
+                "fit": 68.23735143305605,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.00211864406779661
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 31,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6318909476029733,
+                "fit": 37.77176173809011,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 20261004,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.40004379046986094,
+                "fit": 60.60392951823492,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            }
+          ],
+          "chosen_test": {
+            "seed": 20261004,
+            "state": "succeeded",
+            "free_run": {
+              "rmse": 0.40004379046986094,
+              "fit": 60.60392951823492,
+              "n_samples": 457
+            },
+            "future_output_invariance": true,
+            "input_support": {
+              "policy_version": "known_input_support_v1",
+              "start": 2043,
+              "stop": 2500,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "current_motor_1"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "speed_reel_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_2": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "current_motor_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0021551724137931034
+                },
+                "current_motor_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          }
+        },
+        "guard_without_feedback": {
+          "chosen_seed_by_validation": 7,
+          "seeds": [
+            {
+              "seed": 42,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.3605483842382586,
+                "fit": 64.493413231452,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 7,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.3030741996186469,
+                "fit": 70.15343616418338,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.00211864406779661
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 19,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.3921241074091007,
+                "fit": 61.383855115101426,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 31,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.42607880633611717,
+                "fit": 58.040016905427635,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 20261004,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.4071137632389132,
+                "fit": 59.90768287686947,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.002183406113537118
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            }
+          ],
+          "chosen_test": {
+            "seed": 7,
+            "state": "succeeded",
+            "free_run": {
+              "rmse": 0.3030741996186469,
+              "fit": 70.15343616418338,
+              "n_samples": 457
+            },
+            "future_output_invariance": true,
+            "input_support": {
+              "policy_version": "known_input_support_v1",
+              "start": 2043,
+              "stop": 2500,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "current_motor_1"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "speed_reel_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_2": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "current_motor_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.00211864406779661
+                },
+                "current_motor_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          }
+        },
+        "guard_with_feedback": {
+          "chosen_seed_by_validation": 42,
+          "seeds": [
+            {
+              "seed": 42,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.42607880633611717,
+                "fit": 58.040016905427635,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 7,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.441899768025924,
+                "fit": 56.481978168996136,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 19,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.42607880633611717,
+                "fit": 58.040016905427635,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 31,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.42607880633611717,
+                "fit": 58.040016905427635,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 20261004,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.427890308241735,
+                "fit": 57.86162129361787,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            }
+          ],
+          "chosen_test": {
+            "seed": 42,
+            "state": "succeeded",
+            "free_run": {
+              "rmse": 0.42607880633611717,
+              "fit": 58.040016905427635,
+              "n_samples": 457
+            },
+            "future_output_invariance": true,
+            "input_support": {
+              "policy_version": "known_input_support_v1",
+              "start": 2043,
+              "stop": 2500,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "current_motor_1"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "speed_reel_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_2": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "current_motor_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0021551724137931034
+                },
+                "current_motor_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "dataset": "winding_tension_3",
+      "persistence_rmse": 1.1734405017387683,
+      "arms": {
+        "established": {
+          "chosen_seed_by_validation": 20261004,
+          "seeds": [
+            {
+              "seed": 42,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6729152054261686,
+                "fit": 28.84542372154596,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 7,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.7772499736746781,
+                "fit": 17.812984320608795,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 19,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6391901839820109,
+                "fit": 32.411533673424756,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 31,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.5945697446781801,
+                "fit": 37.129733569074006,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 20261004,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.5433951797122186,
+                "fit": 42.54097180091202,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            }
+          ],
+          "chosen_test": {
+            "seed": 20261004,
+            "state": "succeeded",
+            "free_run": {
+              "rmse": 0.5433951797122186,
+              "fit": 42.54097180091202,
+              "n_samples": 457
+            },
+            "future_output_invariance": true,
+            "input_support": {
+              "policy_version": "known_input_support_v1",
+              "start": 2043,
+              "stop": 2500,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "current_motor_1"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "speed_reel_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_2": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "current_motor_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0021551724137931034
+                },
+                "current_motor_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          }
+        },
+        "guard_without_feedback": {
+          "chosen_seed_by_validation": 42,
+          "seeds": [
+            {
+              "seed": 42,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.48462017230056886,
+                "fit": 48.755886718000774,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 7,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6713764659037198,
+                "fit": 29.008131233339242,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 19,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6363687819539173,
+                "fit": 32.70987091443423,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 31,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6713764659037198,
+                "fit": 29.008131233339242,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 20261004,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6778217136626168,
+                "fit": 28.326605731172116,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            }
+          ],
+          "chosen_test": {
+            "seed": 42,
+            "state": "succeeded",
+            "free_run": {
+              "rmse": 0.48462017230056886,
+              "fit": 48.755886718000774,
+              "n_samples": 457
+            },
+            "future_output_invariance": true,
+            "input_support": {
+              "policy_version": "known_input_support_v1",
+              "start": 2043,
+              "stop": 2500,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "current_motor_1"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "speed_reel_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_2": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "current_motor_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0021551724137931034
+                },
+                "current_motor_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          }
+        },
+        "guard_with_feedback": {
+          "chosen_seed_by_validation": 20261004,
+          "seeds": [
+            {
+              "seed": 42,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6713764659037198,
+                "fit": 29.008131233339242,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 7,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6713764659037198,
+                "fit": 29.008131233339242,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 19,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6713764659037198,
+                "fit": 29.008131233339242,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 31,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6713764659037198,
+                "fit": 29.008131233339242,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            },
+            {
+              "seed": 20261004,
+              "state": "succeeded",
+              "free_run": {
+                "rmse": 0.6648439318725545,
+                "fit": 29.698886453705775,
+                "n_samples": 457
+              },
+              "future_output_invariance": true,
+              "input_support": {
+                "policy_version": "known_input_support_v1",
+                "start": 2043,
+                "stop": 2500,
+                "status": "extrapolation",
+                "unsupported_constant_inputs": [],
+                "extrapolated_inputs": [
+                  "current_motor_1"
+                ],
+                "unavailable_inputs": [],
+                "evidence": {
+                  "speed_reel_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_2": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "speed_reel_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  },
+                  "current_motor_1": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0021551724137931034
+                  },
+                  "current_motor_3": {
+                    "constant_in_train": false,
+                    "outside_train_range_fraction": 0.0
+                  }
+                },
+                "coefficient_updates": false,
+                "deployment_ready": false
+              }
+            }
+          ],
+          "chosen_test": {
+            "seed": 20261004,
+            "state": "succeeded",
+            "free_run": {
+              "rmse": 0.6648439318725545,
+              "fit": 29.698886453705775,
+              "n_samples": 457
+            },
+            "future_output_invariance": true,
+            "input_support": {
+              "policy_version": "known_input_support_v1",
+              "start": 2043,
+              "stop": 2500,
+              "status": "extrapolation",
+              "unsupported_constant_inputs": [],
+              "extrapolated_inputs": [
+                "current_motor_1"
+              ],
+              "unavailable_inputs": [],
+              "evidence": {
+                "speed_reel_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_2": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "speed_reel_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                },
+                "current_motor_1": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0021551724137931034
+                },
+                "current_motor_3": {
+                  "constant_in_train": false,
+                  "outside_train_range_fraction": 0.0
+                }
+              },
+              "coefficient_updates": false,
+              "deployment_ready": false
+            }
+          }
+        }
+      }
+    }
+  ]
+}

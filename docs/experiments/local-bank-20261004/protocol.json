@@ -1,0 +1,92 @@
+{
+  "registered_at": "2026-10-04T09:09:44.616969+00:00",
+  "archive": "/Users/maguayuhui/Documents/竞赛/服外 9.22/公开工业数据集/泛化验证-20261003/ContinuousDistillationData.zip",
+  "archive_sha256": "8076e5cec0c1137ab0902c305a2603a4c4ec672308db563ff9749a9b9a7a34ec",
+  "source": "/Users/maguayuhui/Documents/竞赛/服外 9.22/service-outsource/backend/../docs/experiments/operating-points-20261004",
+  "source_development_sha256": "2e21f5e92d89d685ead608dc529c427a17086791ca3e116f85332fee207a7913",
+  "cases": {
+    "distillation_b": {
+      "scenario": "ScenarioB_BinaryComponent_n-butanolwater",
+      "runs": [
+        "006",
+        "001"
+      ],
+      "target": "007",
+      "target_role": "previously_scored_normal_run_regression"
+    },
+    "distillation_c": {
+      "scenario": "ScenarioC_ReactiveOME",
+      "runs": [
+        "006",
+        "001",
+        "002"
+      ],
+      "target": "003",
+      "target_role": "previously_unscored_normal_independent_run"
+    }
+  },
+  "groups": {
+    "controls": [
+      "M101",
+      "TH101_SetPoint",
+      "TV101",
+      "T116"
+    ],
+    "pressure": [
+      "M101",
+      "TH101_SetPoint",
+      "TV101",
+      "T116",
+      "PIC101"
+    ]
+  },
+  "routing": [
+    "past_block",
+    "nearest_input",
+    "uniform"
+  ],
+  "grid": {
+    "na": [
+      1,
+      2,
+      4
+    ],
+    "nb": [
+      1,
+      2,
+      3
+    ],
+    "alpha": [
+      0.01,
+      0.1,
+      1.0
+    ],
+    "policy": [
+      "fixed",
+      "past_residual"
+    ]
+  },
+  "local_selection": "each model from its run Train, configuration by that run chronological Validation only",
+  "routing_selection": "mean leave-one-run-out RMSE/persistence across source runs, held run excluded from bank and normalization",
+  "global_comparator": "source stage-one pooled candidate with lowest leave-one-run-out risk, controls/pressure reported separately",
+  "prefix_policy": "routing may use known target observations strictly before origin; model coefficients and routing rule frozen, route fixed for whole horizon",
+  "forecast_start": 43,
+  "guard": 10,
+  "input_roles": "T116/PIC101 are measured sensor trajectories; conditional simulation, not future-unknown open-loop prediction",
+  "target_role": "both target runs have already been scored, including C op003 in stage one; development regression only",
+  "formal_default_changed": false,
+  "code_sha256": {
+    "backend/scripts/benchmark_local_model_bank.py": "75f1eadd50a9096f1941cc0f272c8fd7285dfc71570aaa110b118957266d560c",
+    "backend/algorithms/identifiability/model_bank.py": "c85dc2c60e590857e93436de843586be1fe69d52f9e45ddebfc62d7934dda755",
+    "backend/scripts/benchmark_operating_points.py": "3e1c7aa98bd85e6b433ad554bfa47ec674c5e70301c452e8a7660ad91ae1bc75",
+    "backend/algorithms/identifiability/operating_points.py": "5106bee17e798723cef2d2687d4eb3e773d72c7125b076c5c8a5dcd951fd29fd",
+    "backend/algorithms/identifiability/experiments.py": "8d71f3256158df68f80ed59b9d2324fdb21847f01ef33c7b3657fa220543e342",
+    "backend/algorithms/identifiability/estimation.py": "93f99e695e518aafe60e97bc486d630911f3d8dc0aa70fd5aa54b11618963d76",
+    "backend/algorithms/identifiability/regressor.py": "2e42a2d99fd9e9a49bc634593e38385dc88681bd2f61c4965cf723b3c8100d5b",
+    "backend/algorithms/identifiability/validation.py": "1c36f784f6c0a85a23ce2cf24e425df4c23c2b290642becda6d76a06f2f83931",
+    "backend/algorithms/identifiability/support.py": "b0fd7ccbfe6d92e1da6a2e1cccf335b3f516af27f87831dd8fe9ef2e28fb7e5e",
+    "backend/scripts/benchmark_initial_and_oe.py": "3a667b2329dccca8e2289456e067d5328e21257c4c0ebc35031699bce16139c7",
+    "backend/scripts/benchmark_validation_guarded.py": "b752f00dfc187ff9412aaea5b890e5372f684bee2f52cf834c06e3ce297be496",
+    "backend/scripts/benchmark_oe_transfer.py": "af7f01d50c408da822f33c962b2f03d29c9ef1cc1a71e38996f3e52051cde25a"
+  }
+}

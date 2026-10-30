@@ -1,0 +1,19 @@
+{
+  "fixed_after_test_at": "2026-10-03T11:29:35.730323+00:00",
+  "scope": "Report rendering and LLM narration only; estimator, delay, selection, optimizer, validation metrics and frozen numerical results unchanged",
+  "changes": [
+    {
+      "path": "algorithms/agent/llm_planner.py",
+      "frozen_sha256": "5b0acaca27538f7a9f976e2b8ca36cb6b8c55a9dd092c4e9d993a7ba45237a9f",
+      "current_sha256": "b97a47d106dee9dbd9ddc7a508d1f9468da3499f825ce47be7585930eddf7a56"
+    },
+    {
+      "path": "app/services/report_service.py",
+      "frozen_sha256": "005d0a65823e535d4f9a795f9c0270fec4a84d4d9d44a704300e4ec7e7b484cd",
+      "current_sha256": "dfd4dbd29270b5ce0ac6014d790bee48af34a61634d7d934e234779c3686c225"
+    }
+  ],
+  "observed_issue": "Real LLM report cited nonexistent test.evaluation_scope and promoted negative-FIT models as ready for APC; standalone report labeled composite v4 objective as legacy val_free_run_fit",
+  "new_behavior": "Whitelist references, provide measured evidence to narrator, flag nonpositive Test FIT, explain data preprocessing optimization, display actual objective semantics",
+  "numeric_snapshot_unchanged": true
+}

@@ -1,0 +1,69 @@
+{
+  "freeze_seal": {
+    "development_sha256": "90c34f22b6996383ec2b48c33d1df6e28c8119d5b68fbd5d59255325ebacd4bb",
+    "original_freeze_seal_sha256": "d2e33c2686f2db9396b6d68a04ef8c061e7a4a5b69ce124e1f9647e6b5c39205",
+    "role": "post_score_API_regression_adapter_for_unchanged_frozen_guard_without_feedback_models"
+  },
+  "results": [
+    {
+      "dataset": "winding_tension_1",
+      "seeds": [
+        {
+          "seed": 42,
+          "test": {
+            "state": "succeeded",
+            "free_run": {
+              "rmse": 0.3605483842382586,
+              "fit": 64.493413231452,
+              "n_samples": 457
+            }
+          }
+        },
+        {
+          "seed": 7,
+          "test": {
+            "state": "succeeded",
+            "free_run": {
+              "rmse": 0.3030741996186469,
+              "fit": 70.15343616418338,
+              "n_samples": 457
+            }
+          }
+        },
+        {
+          "seed": 19,
+          "test": {
+            "state": "succeeded",
+            "free_run": {
+              "rmse": 0.3921241074091007,
+              "fit": 61.383855115101426,
+              "n_samples": 457
+            }
+          }
+        },
+        {
+          "seed": 31,
+          "test": {
+            "state": "succeeded",
+            "free_run": {
+              "rmse": 0.42607880633611717,
+              "fit": 58.040016905427635,
+              "n_samples": 457
+            }
+          }
+        },
+        {
+          "seed": 20261004,
+          "test": {
+            "state": "succeeded",
+            "free_run": {
+              "rmse": 0.4071137632389132,
+              "fit": 59.90768287686947,
+              "n_samples": 457
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "frozen_at": "2026-10-03T11:05:54.174582+00:00",
+  "source_dataset": "distillation_a",
+  "source_file": "ContinuousDistillationData/ScenarioA_SingleComponent_Water/operating_point_004/train_normal_experiment_001.csv",
+  "targets": [
+    {
+      "kind": "same_operating_point_new_run",
+      "member": "ContinuousDistillationData/ScenarioA_SingleComponent_Water/operating_point_004/train_normal_experiment_002.csv"
+    },
+    {
+      "kind": "different_operating_point_new_run",
+      "member": "ContinuousDistillationData/ScenarioA_SingleComponent_Water/operating_point_006/train_normal_experiment_001.csv"
+    }
+  ],
+  "source_models": [
+    "original_grid_full_train",
+    "current_grid_full_train",
+    "optimizer_seed_chosen_by_source_validation"
+  ],
+  "test_rule": "fixed coefficients and source intercept; no refit or target selection; evaluate whole target from sample 43; initial observer/warm history may use preceding 43 actual target output rows, then frozen throughout free-run",
+  "target_choice": "metadata and rowcount only, before any confirmation metrics",
+  "source_validation_only": true
+}

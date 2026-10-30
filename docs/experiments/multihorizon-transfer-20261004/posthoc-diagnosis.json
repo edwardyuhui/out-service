@@ -1,0 +1,22 @@
+[
+  {
+    "case": "distillation_b",
+    "selected_arm": "multihorizon_controls",
+    "source_validation_risk": 0.8607160544106822,
+    "actual_mean": 91.78459405940595,
+    "predicted_mean": 99.19107972106266,
+    "actual_std": 2.573722865746753,
+    "predicted_std": 0.2045290722424161,
+    "mean_bias_squared_fraction_of_mse": 0.8930459660293032
+  },
+  {
+    "case": "distillation_c",
+    "selected_arm": "multihorizon_pressure",
+    "source_validation_risk": 7.146075845753676,
+    "actual_mean": 92.77272727272727,
+    "predicted_mean": 96.08316350414643,
+    "actual_std": 0.964472315672024,
+    "predicted_std": 1.2272251802872196,
+    "mean_bias_squared_fraction_of_mse": 0.8041331774030948
+  }
+]

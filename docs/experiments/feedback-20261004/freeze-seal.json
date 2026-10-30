@@ -1,0 +1,6 @@
+{
+  "protocol_sha256": "af6753f0025e64a3880ee2efb545f38f6fd219e8842a03b1415c405b9e1497b0",
+  "development_sha256": "00e7dc42d7ce3ce05d291d70dcfe7c99ee91a1181aeb1ef3292c3a83cd004572",
+  "sealed_at": "2026-10-04T05:04:27.758019+00:00",
+  "all_models_frozen_before_any_test_score": true
+}

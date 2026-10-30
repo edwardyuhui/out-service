@@ -1,0 +1,6 @@
+{
+  "sealed_at": "2026-10-04T09:09:45.527043+00:00",
+  "protocol_sha256": "6cb39e21a05e07fb54facb17b83d5c2147cd3bff854dd7f16fc8708e78bdec37",
+  "development_sha256": "222e247da9c70e61c7b89277bbb492242f5da324affb08cebd3c64cf85ce8da0",
+  "target_role": "already_observed_development_regression"
+}

@@ -1,0 +1,368 @@
+{
+  "freeze_seal_sha256": "b98c727e0dd27048c66faab763cc1f24ab6ed0a5e11d88edcb19fbdca59b5f08",
+  "previously_inspected_test": true,
+  "results": [
+    {
+      "dataset": "boiler",
+      "arms": {
+        "initial24": {
+          "status": "succeeded",
+          "rmse": 21.646892956888586,
+          "fit": -478.41634286917224,
+          "n_samples": 1397,
+          "future_output_invariance": true,
+          "validation_rmse": 11.022590292960007,
+          "configuration": {
+            "na": 1,
+            "nb": 1,
+            "estimator": "ridge",
+            "ridge_alpha": 0.1
+          },
+          "cpu_seconds": 0.028289999999999926,
+          "training_rows": 4234
+        },
+        "affine24": {
+          "status": "succeeded",
+          "rmse": 2.6233895663476807,
+          "fit": 29.90165369644464,
+          "n_samples": 1397,
+          "future_output_invariance": true,
+          "validation_rmse": 2.9497006145456623,
+          "configuration": {
+            "na": 2,
+            "nb": 2,
+            "estimator": "ridge",
+            "ridge_alpha": 0.1
+          },
+          "cpu_seconds": 0.04222999999999999,
+          "training_rows": 4234
+        },
+        "current102": {
+          "status": "succeeded",
+          "rmse": 1.8807870935297681,
+          "fit": 49.74438158300042,
+          "n_samples": 1397,
+          "future_output_invariance": true,
+          "validation_rmse": 2.6234712624452667,
+          "configuration": {
+            "model_type": "FIR",
+            "na": 0,
+            "nb": 24,
+            "estimator": "ridge",
+            "regularization_kernel": "tc",
+            "kernel_decay": 0.95,
+            "ridge_alpha": 10.0
+          },
+          "cpu_seconds": 0.4521519999999999,
+          "training_rows": 4234
+        },
+        "oe24": {
+          "status": "succeeded",
+          "rmse": 1.8837626259084364,
+          "fit": 49.66487379590202,
+          "n_samples": 1397,
+          "future_output_invariance": true,
+          "validation_rmse": 2.5931869889406935,
+          "configuration": {
+            "na": 3,
+            "nb": 3,
+            "estimator": "ols"
+          },
+          "cpu_seconds": 1.311698,
+          "training_rows": 4234
+        }
+      },
+      "validation_chosen_family": "oe24",
+      "persistence_rmse": 5.794061567821147
+    },
+    {
+      "dataset": "exchanger",
+      "arms": {
+        "initial24": {
+          "status": "succeeded",
+          "rmse": 1.039345675191991,
+          "fit": -3.4432855930933925,
+          "n_samples": 757,
+          "future_output_invariance": true,
+          "validation_rmse": 1.4822473422819868,
+          "configuration": {
+            "na": 1,
+            "nb": 1,
+            "estimator": "ridge",
+            "ridge_alpha": 0.1
+          },
+          "cpu_seconds": 0.013683000000000334,
+          "training_rows": 2314
+        },
+        "affine24": {
+          "status": "succeeded",
+          "rmse": 1.2293559083816088,
+          "fit": -22.354494141503544,
+          "n_samples": 757,
+          "future_output_invariance": true,
+          "validation_rmse": 1.2656276985814263,
+          "configuration": {
+            "na": 1,
+            "nb": 3,
+            "estimator": "ols"
+          },
+          "cpu_seconds": 0.01897700000000002,
+          "training_rows": 2314
+        },
+        "current102": {
+          "status": "succeeded",
+          "rmse": 1.1637614494135444,
+          "fit": -15.826053686787134,
+          "n_samples": 757,
+          "future_output_invariance": true,
+          "validation_rmse": 1.2096976049549373,
+          "configuration": {
+            "model_type": "FIR",
+            "na": 0,
+            "nb": 24,
+            "estimator": "ridge",
+            "regularization_kernel": "tc",
+            "kernel_decay": 0.8,
+            "ridge_alpha": 10.0
+          },
+          "cpu_seconds": 0.11349799999999988,
+          "training_rows": 2314
+        },
+        "oe24": {
+          "status": "succeeded",
+          "rmse": 1.1214845889766205,
+          "fit": -11.61835123269437,
+          "n_samples": 757,
+          "future_output_invariance": true,
+          "validation_rmse": 1.1649635416454789,
+          "configuration": {
+            "na": 1,
+            "nb": 1,
+            "estimator": "ols"
+          },
+          "cpu_seconds": 0.7830500000000002,
+          "training_rows": 2314
+        }
+      },
+      "validation_chosen_family": "oe24",
+      "persistence_rmse": 1.3991742965502239
+    },
+    {
+      "dataset": "distillation_a",
+      "arms": {
+        "initial24": {
+          "status": "succeeded",
+          "rmse": 1.8358320735702827,
+          "fit": -6.198898081692028,
+          "n_samples": 896,
+          "future_output_invariance": true,
+          "validation_rmse": 1.8324080099732136,
+          "configuration": {
+            "na": 3,
+            "nb": 3,
+            "estimator": "ridge",
+            "ridge_alpha": 0.1
+          },
+          "cpu_seconds": 0.0184350000000002,
+          "training_rows": 2729
+        },
+        "affine24": {
+          "status": "succeeded",
+          "rmse": 1.9146899274695661,
+          "fit": -10.760653652779851,
+          "n_samples": 896,
+          "future_output_invariance": true,
+          "validation_rmse": 1.9896024266141834,
+          "configuration": {
+            "na": 1,
+            "nb": 3,
+            "estimator": "ridge",
+            "ridge_alpha": 0.1
+          },
+          "cpu_seconds": 0.027911999999999715,
+          "training_rows": 2729
+        },
+        "current102": {
+          "status": "succeeded",
+          "rmse": 1.800149739261263,
+          "fit": -4.134752542916886,
+          "n_samples": 896,
+          "future_output_invariance": true,
+          "validation_rmse": 1.7616327380224375,
+          "configuration": {
+            "model_type": "FIR",
+            "na": 0,
+            "nb": 24,
+            "estimator": "ridge",
+            "regularization_kernel": "tc",
+            "kernel_decay": 0.95,
+            "ridge_alpha": 0.1
+          },
+          "cpu_seconds": 0.30577699999999997,
+          "training_rows": 2729
+        },
+        "oe24": {
+          "status": "succeeded",
+          "rmse": 1.8248795451654554,
+          "fit": -5.565318102048766,
+          "n_samples": 896,
+          "future_output_invariance": true,
+          "validation_rmse": 1.8486532996136413,
+          "configuration": {
+            "na": 4,
+            "nb": 3,
+            "estimator": "ols"
+          },
+          "cpu_seconds": 0.8401839999999998,
+          "training_rows": 2729
+        }
+      },
+      "validation_chosen_family": "current102",
+      "persistence_rmse": 2.1679818009581395
+    },
+    {
+      "dataset": "distillation_b",
+      "arms": {
+        "initial24": {
+          "status": "succeeded",
+          "rmse": 2.507945896292264,
+          "fit": -168.5678508740966,
+          "n_samples": 148,
+          "future_output_invariance": true,
+          "validation_rmse": 0.756662300225509,
+          "configuration": {
+            "na": 4,
+            "nb": 1,
+            "estimator": "ridge",
+            "ridge_alpha": 0.1
+          },
+          "cpu_seconds": 0.004347999999999352,
+          "training_rows": 484
+        },
+        "affine24": {
+          "status": "succeeded",
+          "rmse": 5.990017916665544,
+          "fit": -541.4517318553533,
+          "n_samples": 148,
+          "future_output_invariance": true,
+          "validation_rmse": 0.8983881088368623,
+          "configuration": {
+            "na": 4,
+            "nb": 1,
+            "estimator": "ols"
+          },
+          "cpu_seconds": 0.006861999999999924,
+          "training_rows": 484
+        },
+        "current102": {
+          "status": "succeeded",
+          "rmse": 3.2547220501641485,
+          "fit": -248.53770469985216,
+          "n_samples": 148,
+          "future_output_invariance": true,
+          "validation_rmse": 0.7789443537554974,
+          "configuration": {
+            "model_type": "FIR",
+            "na": 0,
+            "nb": 24,
+            "estimator": "ridge",
+            "regularization_kernel": "tc",
+            "kernel_decay": 0.95,
+            "ridge_alpha": 0.1,
+            "initialization_policy": "past_residual",
+            "initialization_window": 32
+          },
+          "cpu_seconds": 0.048962000000000394,
+          "training_rows": 484
+        },
+        "oe24": {
+          "status": "succeeded",
+          "rmse": 2.549563213359776,
+          "fit": -173.0245153581637,
+          "n_samples": 148,
+          "future_output_invariance": true,
+          "validation_rmse": 0.7972293368153682,
+          "configuration": {
+            "na": 4,
+            "nb": 2,
+            "estimator": "ols"
+          },
+          "cpu_seconds": 0.5585930000000001,
+          "training_rows": 484
+        }
+      },
+      "validation_chosen_family": "current102",
+      "persistence_rmse": 2.501950185301404
+    },
+    {
+      "dataset": "distillation_c",
+      "arms": {
+        "initial24": {
+          "status": "succeeded",
+          "rmse": 1.5344292006415075,
+          "fit": -124.65751939482104,
+          "n_samples": 290,
+          "future_output_invariance": true,
+          "validation_rmse": 0.6563942910782238,
+          "configuration": {
+            "na": 1,
+            "nb": 1,
+            "estimator": "ridge",
+            "ridge_alpha": 0.1
+          },
+          "cpu_seconds": 0.007072999999999219,
+          "training_rows": 911
+        },
+        "affine24": {
+          "status": "succeeded",
+          "rmse": 0.8425343752718418,
+          "fit": -23.35641336485461,
+          "n_samples": 290,
+          "future_output_invariance": true,
+          "validation_rmse": 0.47045137802813736,
+          "configuration": {
+            "na": 3,
+            "nb": 3,
+            "estimator": "ols"
+          },
+          "cpu_seconds": 0.01098700000000008,
+          "training_rows": 911
+        },
+        "current102": {
+          "status": "succeeded",
+          "rmse": 0.8048247196454082,
+          "fit": -17.83529991972095,
+          "n_samples": 290,
+          "future_output_invariance": true,
+          "validation_rmse": 0.4556969053930804,
+          "configuration": {
+            "model_type": "ARX",
+            "na": 8,
+            "nb": 8,
+            "estimator": "ridge",
+            "ridge_alpha": 0.1
+          },
+          "cpu_seconds": 0.09383099999999978,
+          "training_rows": 911
+        },
+        "oe24": {
+          "status": "succeeded",
+          "rmse": 0.8577028899456525,
+          "fit": -25.577252800194827,
+          "n_samples": 290,
+          "future_output_invariance": true,
+          "validation_rmse": 0.45306264724278444,
+          "configuration": {
+            "na": 2,
+            "nb": 3,
+            "estimator": "ols"
+          },
+          "cpu_seconds": 0.8731519999999993,
+          "training_rows": 911
+        }
+      },
+      "validation_chosen_family": "oe24",
+      "persistence_rmse": 0.6859202225653782
+    }
+  ]
+}

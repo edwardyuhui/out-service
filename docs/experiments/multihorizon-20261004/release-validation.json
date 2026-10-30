@@ -1,0 +1,41 @@
+{
+  "backend_distinct_tests_passed": 718,
+  "backend_new_tests": 24,
+  "backend_evidence": [
+    "backend-tests.xml",
+    "backend-contract-retry.xml",
+    "redis-tests.xml",
+    "type-repair-tests.xml"
+  ],
+  "frontend_distinct_tests_passed": 282,
+  "frontend_evidence": [
+    "frontend-serial-tests.log",
+    "frontend-lineage-retry.log"
+  ],
+  "frontend_initial_failures_preserved": true,
+  "python_typecheck": "backend-types-complete.log",
+  "frontend_typecheck": "frontend-types.log",
+  "frontend_build": "frontend-build.log",
+  "default_optimizer_changed": false,
+  "experimental_oe_available_in_api_and_ui": true,
+  "llm_calls_this_round": 0,
+  "fresh_independent_test": "official cascaded tanks yVal; first scored once after freeze",
+  "failed_transfer": "distillation B007 and C003 previously scored development regression",
+  "limitations": [
+    "SISO fresh-test improvement does not prove MISO or cross-factory generalization",
+    "OE soft weights and automatic Optuna search not supported",
+    "multi-horizon does not outperform single-horizon OE on fresh Test"
+  ],
+  "code_sha256": {
+    "backend/algorithms/identifiability/multihorizon.py": "3f3ebcdda83565dc68949f8a73c9da303b637bcd4d881bdcc8d4d03a82594011",
+    "backend/algorithms/identifiability/output_error.py": "0072dee5c5029e580ac2df47fb3f100d92d40857a061d4a08abd2818f8c5f6ba",
+    "backend/algorithms/identifiability/support.py": "d527861e15b14308afb7b6dacd3a0f0c6eeb6487f5554ca5b3d110e621184a78",
+    "backend/app/schemas/modeling.py": "8d0c542c5b4f2abde86a128b517eaf984f286c022054a3e7f0c24f0fe0cbe36a",
+    "backend/app/services/modeling_service.py": "31485442fe3139338b811839eca524aa65c6b775ee640fffc09ee13c25b5f266",
+    "frontend/src/types/api.ts": "aaf2c9d6907dce70dabbd068058942b04eb4f3d5d1eb22d76f5136ec3fd73369",
+    "frontend/src/views/ARXModelingView.vue": "9ecfd39702e9422c78e34869bbe2118d3863d8003fb7eb9de4622b4924d76acf",
+    "frontend/src/components/artifact/ArxModelArtifactRenderer.vue": "41f5234e6939f450e2d8a4121f03ac65c34f1d7205adbd5903b20120140d176e"
+  },
+  "test_result_sha256": "0a4d8f21dc994cf7750a460575a6f443a154a632e3fa78ad3a0d37c7bf20ae0f",
+  "freeze_seal_sha256": "804b60acdb41f2c08e4dc946ae9809748f56ae9c21d9a16471094ae86dda3d4d"
+}

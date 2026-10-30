@@ -1,0 +1,113 @@
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "${INDUSOPT_WEB_PORT:-8080}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+  backend:
+    build:
+      context: ./backend
+      args:
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-https://pypi.org/simple}
+    environment:
+      INDUSOPT_DATABASE_URL: postgresql+asyncpg://indusopt:indusopt@postgres:5432/indusopt
+      INDUSOPT_REDIS_URL: redis://redis:6379/0
+      INDUSOPT_APP_ENV: development
+      # With a worker in the stack, hand long closed-loop studies to it instead of holding
+      # the HTTP request open for minutes. Falls back to inline execution automatically if
+      # Redis or the worker is unavailable.
+      INDUSOPT_BACKGROUND_OPTIMIZATION: ${INDUSOPT_BACKGROUND_OPTIMIZATION:-true}
+      # Large language model. Leave INDUSOPT_LLM_PROVIDER unset or "none" to run fully
+      # offline on the deterministic planner. To enable, point these at any
+      # OpenAI-compatible endpoint — DeepSeek, Ollama, vLLM, Xinference, self-hosted
+      # ChatGLM/LLaMA. Example for a local Ollama on the host:
+      #   INDUSOPT_LLM_PROVIDER: ollama
+      #   INDUSOPT_LLM_BASE_URL: http://host.docker.internal:11434/v1
+      #   INDUSOPT_LLM_MODEL: qwen2.5:7b
+      INDUSOPT_LLM_PROVIDER: ${INDUSOPT_LLM_PROVIDER:-none}
+      INDUSOPT_LLM_BASE_URL: ${INDUSOPT_LLM_BASE_URL:-}
+      INDUSOPT_LLM_MODEL: ${INDUSOPT_LLM_MODEL:-}
+      INDUSOPT_LLM_API_KEY: ${INDUSOPT_LLM_API_KEY:-}
+    ports:
+      - "${INDUSOPT_BACKEND_PORT:-18000}:8000"
+    command: sh -c 'alembic upgrade head && exec uvicorn app.main:app --host 0.0.0.0 --port 8000'
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/health/ready', timeout=5)"]
+      interval: 10s
+      timeout: 6s
+      retries: 12
+    volumes:
+      - ./backend/data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  worker:
+    build:
+      context: ./backend
+      args:
+        PIP_INDEX_URL: ${PIP_INDEX_URL:-https://pypi.org/simple}
+    # Must name the queue: jobs are enqueued to "indusopt", and a worker left on the
+    # default queue would idle forever while studies pile up unprocessed.
+    command: rq worker indusopt --url redis://redis:6379/0
+    environment:
+      INDUSOPT_DATABASE_URL: postgresql+asyncpg://indusopt:indusopt@postgres:5432/indusopt
+      INDUSOPT_REDIS_URL: redis://redis:6379/0
+      INDUSOPT_APP_ENV: development
+      # With a worker in the stack, hand long closed-loop studies to it instead of holding
+      # the HTTP request open for minutes. Falls back to inline execution automatically if
+      # Redis or the worker is unavailable.
+      INDUSOPT_BACKGROUND_OPTIMIZATION: ${INDUSOPT_BACKGROUND_OPTIMIZATION:-true}
+      # Large language model. Leave INDUSOPT_LLM_PROVIDER unset or "none" to run fully
+      # offline on the deterministic planner. To enable, point these at any
+      # OpenAI-compatible endpoint — DeepSeek, Ollama, vLLM, Xinference, self-hosted
+      # ChatGLM/LLaMA. Example for a local Ollama on the host:
+      #   INDUSOPT_LLM_PROVIDER: ollama
+      #   INDUSOPT_LLM_BASE_URL: http://host.docker.internal:11434/v1
+      #   INDUSOPT_LLM_MODEL: qwen2.5:7b
+      INDUSOPT_LLM_PROVIDER: ${INDUSOPT_LLM_PROVIDER:-none}
+      INDUSOPT_LLM_BASE_URL: ${INDUSOPT_LLM_BASE_URL:-}
+      INDUSOPT_LLM_MODEL: ${INDUSOPT_LLM_MODEL:-}
+      INDUSOPT_LLM_API_KEY: ${INDUSOPT_LLM_API_KEY:-}
+    volumes:
+      - ./backend/data:/app/data
+    depends_on:
+      backend:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: indusopt
+      POSTGRES_USER: indusopt
+      POSTGRES_PASSWORD: indusopt
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U indusopt -d indusopt"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres_data:
+  redis_data:

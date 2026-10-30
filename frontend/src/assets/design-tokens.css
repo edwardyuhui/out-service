@@ -1,0 +1,296 @@
+/* ============================================================
+   IndusOpt — Modern Industrial AI Agent Workspace
+   Design Tokens (LIGHT FIRST, NEUTRAL SURFACES, RESTRAINED ACCENT)
+   Principles: Clean, Calm, Intelligent, Focused, Minimal, Professional
+   ============================================================ */
+
+:root {
+  /* ── SURFACES (90% Neutral Minimal Palette) ───────────────── */
+  --bg-app:        #F7F7F8;   /* 页面主底色：自然轻微米灰/中性浅白 */
+  --bg-subtle:     #F3F3F5;   /* 次级底色 */
+  --bg-sidebar:    #FAFAFA;   /* 侧边栏底色：极浅纯净平面 */
+  --surface-1:     #FFFFFF;   /* 主工作区 / 卡片 / 输入框主表面 */
+  --surface-2:     #F5F5F7;   /* 次级表面 / 嵌套区 / 表格表头 */
+  --surface-3:     #ECECED;   /* 浮层 / 面板背景 / 辅助容器 */
+  --surface-hover: #EFEFF1;   /* 悬浮交互态 */
+  --surface-active:#E5E5E8;   /* 激活选中态 */
+  --bg-footer:     #FAFAFA;   /* 底部状态栏 */
+
+  /* Compatibility Aliases */
+  --bg-surface:    var(--surface-1);
+  --bg-elevated:   var(--surface-2);
+  --bg-overlay:    var(--surface-1);
+  --bg-header:     rgba(247, 247, 248, 0.92);
+  --bg-active:     var(--surface-active);
+  --bg-input:      #FFFFFF;
+
+  /* ── BORDERS (极弱边界，优先通过间距与层级分割) ─────────────── */
+  --border-subtle:  rgba(0, 0, 0, 0.05);  /* 极细微结构线 */
+  --border-default: #E5E5E8;              /* 默认卡片与输入边框 */
+  --border-strong:  #D1D1D6;              /* 强调 / 悬浮边框 */
+  --border-focus:   #5E8358;              /* 聚焦线 (Restrained Sage) */
+
+  /* Compatibility Aliases */
+  --border:        var(--border-default);
+  --border-muted:  var(--border-subtle);
+
+  /* ── TEXT & TYPOGRAPHY (Neutral 900 / 600 / 400 Scale) ────── */
+  --text-primary:   #171717;  /* 主标题 / 核心阅读文本 (Neutral 900) */
+  --text-secondary: #666666;  /* 正文 / 次要阅读说明 (Neutral 600) */
+  --text-tertiary:  #8E8E93;  /* 标签 / 元数据说明 (Neutral 500) */
+  --text-muted:     #A1A1A6;  /* 占位符 / 弱提示 */
+  --text-disabled:  #C7C7CC;  /* 禁用文字 */
+  --text-faint:     #D1D1D6;  /* 极弱辅助 */
+
+  /* ── BRAND / ACCENT (克制单主色：鼠尾草深草绿 < 10%) ─────────── */
+  --accent:         #426340;  /* 核心主动作 / 选中 / 运行中 */
+  --accent-hover:   #345032;
+  --accent-active:  #294027;
+  --accent-dark:    #2F492E;
+  --accent-soft:    #EDF4E9;
+  --accent-medium:  #DDEBD7;
+  --accent-border:  #C9DEC2;
+  --accent-dim:     var(--accent-soft);
+  --accent-glow:    rgba(66, 99, 64, 0.08);
+
+  /* ── STATUS COLORS (低饱和中性化语义色) ─────────────────────── */
+  --success:        #4A7C59;
+  --success-soft:   #EDF5EF;
+  --color-success:        var(--success);
+  --color-success-dim:    var(--success-soft);
+  --color-success-border: #CBE5D1;
+
+  --warning:        #A87B32;
+  --warning-soft:   #FAF4E8;
+  --color-warning:        var(--warning);
+  --color-warning-dim:    var(--warning-soft);
+  --color-warning-border: #EFE0C2;
+
+  --danger:         #B34E48;
+  --danger-soft:    #FAECEB;
+  --color-error:          var(--danger);
+  --color-error-dim:      var(--danger-soft);
+  --color-error-border:   #ECC8C6;
+
+  --info:           #5E778B;
+  --info-soft:      #EEF3F6;
+  --color-info:           var(--info);
+  --color-info-dim:       var(--info-soft);
+  --color-info-border:    #CCDCE6;
+
+  /* ── AGENT WORKFLOW STEP STATUS ──────────────────────────── */
+  --status-pending:   #C7C7CC;  /* 待执行 */
+  --status-running:   #426340;  /* 运行中 (Sage Accent) */
+  --status-waiting:   #A87B32;  /* 等待确认 (Warm Amber) */
+  --status-completed: #4A7C59;  /* 已完成 (Forest Green) */
+  --status-failed:    #B34E48;  /* 失败 (Muted Red) */
+  --status-cancelled: #8E8E93;  /* 已取消 */
+
+  /* ── DARK UTILITY (仅用于 Terminal/Code/Raw Output) ──────── */
+  --dark-panel:           #1C1C1E;
+  --dark-panel-secondary: #242426;
+  --dark-text:            #F2F2F7;
+  --dark-text-muted:      #8E8E93;
+  --dark-border:          #38383A;
+
+  /* ── CHARTS — LIGHT LOW-SATURATION PALETTE ───────────────── */
+  --chart-1: #4A7C59;
+  --chart-2: #5E778B;
+  --chart-3: #A87B32;
+  --chart-4: #7D6B88;
+  --chart-5: #A85D57;
+  --chart-grid: #EBEBED;
+  --chart-axis: #8E8E93;
+  --chart-tooltip-bg: #FFFFFF;
+  --chart-tooltip-border: #E5E5E8;
+
+  /* ── SPACING SCALE (Strict 4/8/12/16/20/24/32/40/48px) ────── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* ── BORDER RADIUS (克制几何：Tag 6px, Btn 8px, Input 10px, Card 12px, Modal 16px) */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl:16px;
+  --radius-full: 9999px;
+
+  /* ── SHADOWS (轻柔自然，极其克制) ─────────────────────────── */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 3px 8px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.06);
+  --shadow-floating: 0 12px 32px rgba(0, 0, 0, 0.08);
+  --shadow-glow: none;
+
+  /* ── TYPOGRAPHY ──────────────────────────────────────────── */
+  --font-sans: 'IndusOpt Sans', system-ui, -apple-system, BlinkMacSystemFont,
+               'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+               'Microsoft YaHei UI', 'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif;
+  --font-mono: 'IndusOpt Mono', ui-monospace, 'Cascadia Mono',
+               'SFMono-Regular', 'SF Mono', Consolas, 'Liberation Mono', monospace;
+
+  --font-size-xs:   11px;
+  --font-size-sm:   12px;
+  --font-size-base: 13px;
+  --font-size-md:   14px;
+  --font-size-lg:   16px;
+  --font-size-xl:   20px;
+  --font-size-2xl:  24px;
+  --font-size-hero: 32px;
+
+  --line-height-tight:   1.25;
+  --line-height-base:    1.55;
+  --line-height-relaxed: 1.65;
+
+  /* ── TRANSITIONS ─────────────────────────────────────────── */
+  --transition-fast: 140ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* ── LAYOUT DIMENSIONS ───────────────────────────────────── */
+  --sidebar-width-collapsed: 56px;
+  --sidebar-width-expanded:  224px;
+  --header-height: 52px;
+  --artifact-panel-width: 440px;
+  --composer-max-width: 820px;
+
+  /* ── Z-INDEX ─────────────────────────────────────────────── */
+  --z-base:       1;
+  --z-sidebar:    10;
+  --z-header:     20;
+  --z-dropdown:   100;
+  --z-modal:      200;
+  --z-toast:      300;
+  --z-tooltip:    400;
+
+  /* ── ELEMENT PLUS OVERRIDES (LIGHT NEUTRAL + SAGE) ───────── */
+  --el-font-family:             var(--font-sans);
+  --el-color-primary:           var(--accent);
+  --el-color-primary-light-3:   #5E8358;
+  --el-color-primary-light-5:   #82A978;
+  --el-color-primary-light-7:   #B0CEAA;
+  --el-color-primary-light-8:   #D4E5D0;
+  --el-color-primary-light-9:   var(--accent-soft);
+  --el-color-primary-dark-2:    var(--accent-hover);
+
+  --el-color-success:           var(--success);
+  --el-color-success-light-9:   var(--success-soft);
+  --el-color-warning:           var(--warning);
+  --el-color-warning-light-9:   var(--warning-soft);
+  --el-color-danger:            var(--danger);
+  --el-color-danger-light-9:    var(--danger-soft);
+  --el-color-info:              var(--info);
+  --el-color-info-light-9:      var(--info-soft);
+
+  --el-bg-color:                var(--surface-1);
+  --el-bg-color-page:           var(--bg-app);
+  --el-bg-color-overlay:        var(--surface-1);
+
+  --el-border-color:            var(--border-default);
+  --el-border-color-light:      var(--border-subtle);
+  --el-border-color-lighter:    var(--border-subtle);
+  --el-border-radius-base:      var(--radius-md);
+  --el-border-radius-small:     var(--radius-sm);
+
+  --el-text-color-primary:      var(--text-primary);
+  --el-text-color-regular:      var(--text-secondary);
+  --el-text-color-secondary:    var(--text-tertiary);
+  --el-text-color-placeholder:  var(--text-muted);
+
+  --el-fill-color-blank:        var(--surface-1);
+  --el-fill-color:              var(--surface-2);
+
+  --el-table-header-bg-color:   var(--surface-2);
+  --el-table-header-text-color: var(--text-secondary);
+  --el-table-border-color:      var(--border-subtle);
+  --el-table-row-hover-bg-color: var(--surface-hover);
+  --el-table-bg-color:          var(--surface-1);
+
+  --el-menu-bg-color:           transparent;
+  --el-menu-item-font-size:     var(--font-size-base);
+  --el-menu-hover-bg-color:     var(--surface-hover);
+  --el-menu-active-color:       var(--text-primary);
+
+  --el-input-bg-color:          var(--surface-1);
+  --el-input-border-color:      var(--border-default);
+  --el-input-hover-border-color: var(--border-strong);
+  --el-input-focus-border-color: var(--border-focus);
+  --el-input-text-color:        var(--text-primary);
+  --el-input-placeholder-color: var(--text-muted);
+
+  --el-dialog-bg-color:         var(--surface-1);
+  --el-dialog-border-radius:    var(--radius-2xl);
+
+  --el-popover-bg-color:        var(--surface-1);
+  --el-popover-border-color:    var(--border-default);
+
+  --el-tag-border-radius:       var(--radius-xs);
+
+  --el-steps-finish-icon-bg-color:   var(--success);
+  --el-steps-finish-icon-color:      #FFFFFF;
+  --el-steps-process-icon-bg-color:  var(--accent);
+  --el-steps-process-icon-color:     #FFFFFF;
+  --el-steps-wait-icon-bg-color:     var(--surface-3);
+  --el-steps-wait-icon-color:        var(--text-muted);
+  --el-steps-error-icon-bg-color:    var(--danger);
+  --el-steps-error-icon-color:       #FFFFFF;
+}
+
+/* ── OPTIONAL DARK THEME PRESERVED ───────────────────────── */
+[data-theme="dark"] {
+  --bg-app:        #111210;
+  --bg-sidebar:    #0E0F0D;
+  --surface-1:     #171815;
+  --surface-2:     #1C1D19;
+  --surface-3:     #23241F;
+  --surface-hover: #282923;
+  --surface-active:#2D2F28;
+  --bg-footer:     #141512;
+
+  --border-subtle:  rgba(242, 240, 232, 0.06);
+  --border-default: rgba(242, 240, 232, 0.10);
+  --border-strong:  rgba(242, 240, 232, 0.16);
+  --border-focus:   rgba(183, 215, 168, 0.35);
+
+  --text-primary:   #F1EFE8;
+  --text-secondary: #B3B0A6;
+  --text-tertiary:  #858279;
+  --text-muted:     #65635D;
+  --text-disabled:  #4C4B46;
+
+  --accent:         #B7D7A8;
+  --accent-hover:   #C3E0B5;
+  --accent-active:  #A5C897;
+  --accent-dark:    #82A978;
+  --accent-soft:    rgba(183, 215, 168, 0.10);
+  --accent-medium:  rgba(183, 215, 168, 0.18);
+  --accent-border:  rgba(183, 215, 168, 0.28);
+
+  --success:        #86B895;
+  --success-soft:   rgba(134, 184, 149, 0.12);
+  --warning:        #D2B36F;
+  --warning-soft:   rgba(210, 179, 111, 0.12);
+  --danger:         #D27D78;
+  --danger-soft:    rgba(210, 125, 120, 0.12);
+  --info:           #9BAEC8;
+  --info-soft:      rgba(155, 174, 200, 0.12);
+
+  --chart-1: #A9C99B;
+  --chart-2: #A6B5C5;
+  --chart-3: #C5A977;
+  --chart-4: #B59BBE;
+  --chart-5: #C08E89;
+  --chart-grid: rgba(242, 240, 232, 0.06);
+  --chart-axis: #77756E;
+  --chart-tooltip-bg: #20211D;
+  --chart-tooltip-border: rgba(242, 240, 232, 0.10);
+}

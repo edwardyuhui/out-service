@@ -1,0 +1,25 @@
+{
+  "phase": "after Test scores; original protocol and results preserved",
+  "changes": {
+    "backend/algorithms/identifiability/multihorizon.py": {
+      "before_sha256": "c360c1483eae04dbd2fdc30d775219cac8a0541525ec674002e98c7a84f7c765",
+      "after_sha256": "3f3ebcdda83565dc68949f8a73c9da303b637bcd4d881bdcc8d4d03a82594011"
+    },
+    "backend/algorithms/identifiability/output_error.py": {
+      "before_sha256": "2c8b3918119c0345d33a38bc5ed420ad71f688b79bcc61884cacc0a064d1bc2d",
+      "after_sha256": "0072dee5c5029e580ac2df47fb3f100d92d40857a061d4a08abd2818f8c5f6ba"
+    },
+    "backend/algorithms/identifiability/support.py": {
+      "before_sha256": "b0fd7ccbfe6d92e1da6a2e1cccf335b3f516af27f87831dd8fe9ef2e28fb7e5e",
+      "after_sha256": "d527861e15b14308afb7b6dacd3a0f0c6eeb6487f5554ca5b3d110e621184a78"
+    }
+  },
+  "description": "Static typing/casts and loop-local argument binding only; no algorithm, grid, selection or numerical loss changes",
+  "selected_source_refits_bitwise_identical": [
+    "tanks_selected_multihorizon",
+    "distillation_b",
+    "distillation_c"
+  ],
+  "fresh_target_rescored": false,
+  "original_code": "frozen-source stores original code matching protocol; restore matching checkout to replay original hashes"
+}
