@@ -1,0 +1,55 @@
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Dependencies, caches and builds
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.venv*/
+node_modules/
+dist/
+dist-ssr/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+playwright-report/
+test-results/
+*.log
+*.local
+
+# Runtime data and generated exports
+.runtime/
+backend/data/
+*.sqlite
+*.sqlite3
+*.db
+postgres_data/
+redis_data/
+output/
+artifacts/
+tmp/
+.chart-data-*/
+.codex-ppt-*/
+.presentation-build/
+.lark-slides/
+.github-upload/
+
+# Bulky competition packages are kept outside this source snapshot
+*.zip
+*.7z
+*.mp4
+*.mov
+*.pptx
+*.pdf
+*.docx
+*.xlsx
